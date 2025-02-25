@@ -75,7 +75,11 @@ ul{
 }
 
 .flogo{
-    width: 80%;
+    width: 90%;
+    text-align: center;
+}
+.footlogo{
+    width: 30%;
 }
 
 .connect{
@@ -142,7 +146,8 @@ ul{
     }
     .flogo2{
         display: inline;
-        width: 90%;
+        width: 100%;
+        margin-top: 10%;
     }
     .footlogo{
         text-align: center;
@@ -151,6 +156,9 @@ ul{
         width: 90%;
         justify-content: center;
         align-items: center;
+    }
+    .cpyr8{
+        margin-top: 5%;
     }
 
 }
