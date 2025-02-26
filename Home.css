@@ -1,7 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    background-image: url("./imgs/linen\ textute.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 nav{
     margin-top: 2vh;
     display: flex;
@@ -12,6 +16,7 @@ nav{
     box-shadow: 0 0 30px rgba(227, 228, 237, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.2);
     height: 6vh;
+    z-index: 1;
 }
 .main{
     display: flex;
@@ -62,4 +67,80 @@ nav{
 .home:hover::after, .suggest:hover::after, .search:hover::after, 
 .foodie:hover::after, .gamez:hover::after {
     transform: scaleX(1);
+}
+
+.card {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+.card-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.front {
+    background-color: inherit;
+    font-size: 40px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.c1 {
+    background-color: #7ed957;
+}
+
+.c2 {
+    background-color: #ff914d;
+}
+
+.cards {
+    padding-top: 15vh;
+    gap: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.front-page {
+    width: 30%;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex{
+    width: 90%;
+}
+.b1{
+    background-color: #7ed957;
+}
+.b2{
+    background-color: #ff914d;
+}
+.highlight{
+    color: black;
 }
