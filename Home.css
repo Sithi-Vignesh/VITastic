@@ -239,6 +239,9 @@ ul{
     .connect{
         width: 70%;
     }
+    .ex{
+        font-size: 18px;
+    }
 }
 @media (max-width: 800px) {
     .visit{
@@ -282,5 +285,36 @@ ul{
     .cpyr8{
         margin-top: 5%;
     }
+    .card-side {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
 
+    .front {
+        display: flex;
+    }
+
+    .back {
+        display: none;
+    }
+
+    .card:hover {
+        transform: none;    
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .front-page{
+        width: 90%;
+    }
 }
