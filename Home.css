@@ -4,10 +4,10 @@ body {
     background-image: url("./imgs/linen\ textute.jpg"); 
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 nav{
-    margin-top: 2vh;
     display: flex;
     align-items: center;
     position: fixed;
@@ -15,7 +15,7 @@ nav{
     backdrop-filter: blur(30px);
     box-shadow: 0 0 30px rgba(227, 228, 237, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    height: 6vh;
+    height: 6.5vh;
     z-index: 1;
 }
 .main{
@@ -143,4 +143,115 @@ nav{
 }
 .highlight{
     color: black;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: sans-serif;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footcon{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.infos{
+    color: rgba(0, 0, 0, 0.7);
+}
+ul{
+    list-style-type: none;
+}
+
+.flogo{
+    width: 90%;
+    text-align: center;
+}
+.footlogo{
+    width: 30%;
+}
+
+.connect{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 5%;
+    border: 2px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    width: 60%;
+    justify-content: space-around;
+}
+.foot1{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 30%;
+}
+.cpyr8{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.flogo2{
+    display: none;
+}
+
+
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .visit{
+        top: 42%;
+    }
+    .connect{
+        width: 70%;
+    }
+}
+@media (max-width: 800px) {
+    .visit{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 30%;
+        animation: none;
+    }
+    .strtcon{
+        animation: none;
+    }
+    .visitcon{
+        text-align: center;
+    }
+    .strtlogo, .caption{
+        width: 80%;
+    }
+    .footcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flogo{
+        display: none;
+    }
+    .flogo2{
+        display: inline;
+        width: 100%;
+        margin-top: 10%;
+    }
+    .footlogo{
+        text-align: center;
+    }
+    .foot1{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .cpyr8{
+        margin-top: 5%;
+    }
+
 }
