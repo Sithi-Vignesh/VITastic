@@ -107,11 +107,28 @@ nav{
 }
 
 .c1 {
-    background-color: #7ed957;
+    background: linear-gradient(45deg, #7ed957, #2db400, #7ed957, #2db400);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
 }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 
 .c2 {
-    background-color: #ff914d;
+    background: linear-gradient(45deg, #ffb347, #ff7e00, #ffb347, #ff7e00);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
 }
 
 .cards {
@@ -136,14 +153,26 @@ nav{
     width: 90%;
 }
 .b1{
-    background-color: #7ed957;
+    background: linear-gradient(45deg, #7ed957, #2db400, #7ed957, #2db400);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
 }
 .b2{
-    background-color: #ff914d;
+    background: linear-gradient(45deg, #ffb347, #ff7e00, #ffb347, #ff7e00);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite; 
 }
 .highlight{
     color: black;
 }
+
+.png{
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 footer{
     margin: 0;
