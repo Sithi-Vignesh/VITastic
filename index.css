@@ -110,12 +110,22 @@ ul{
 
 
 
-@media (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
     .visit{
         top: 42%;
     }
     .connect{
-        width: 70%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px){
+    .connect{
+        width: 100%;
+    }
+    .flogo{
+        padding-top: 15%;
+        width: 100%;
     }
 }
 @media (max-width: 800px) {
