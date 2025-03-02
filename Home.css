@@ -553,6 +553,8 @@ ul{
 }
 
 .top9{
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.4);
     border: 1px solid black;
     border-radius: 20px;
     width: 95%;
