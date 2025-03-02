@@ -136,6 +136,7 @@ nav{
 
 .cards {
     padding-top: 15vh;
+    padding-bottom: 10vh;
     gap: 1%;
     display: flex;
     justify-content: center;
@@ -550,6 +551,7 @@ ul{
 .outtop9{
     display: flex;
     justify-content: center;
+    padding-bottom: 10vh;
 }
 
 .top9{
@@ -581,27 +583,26 @@ ul{
     height: 40vh;
     display: flex;
     gap: 1vw;
-  }
+}
   
-  .cd {
+.cd {
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
-  
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
     cursor: pointer;
     position: relative;
-    transition: flex-grow 1s cubic-bezier(0.16, 1, 0.3, 1);
-    --transition-timing: 0.5s;
-  }
+    transition: flex-grow 1s cubic-bezier(0.15, 1, 0.3, 1);
+    --transition-timing: 0.75s;
+}
 
-  .cd:hover {
+.cd:hover {
     flex-grow: 5;
-  }
+}
   
-  .cd > .background {
+.cd > .background {
     position: absolute;
     inset: 0;
     object-fit: cover;
@@ -609,12 +610,12 @@ ul{
     filter: brightness(0.7);
     z-index: -1;
     transition: var(--transition-timing) ease;
-  }
-  .cd:hover > .background {
+}
+.cd:hover > .background {
     filter: brightness(1);
-  }
+}
   
-  .cd > .cd-content {
+.cd > .cd-content {
     display: flex;
     align-items: center;
     position: absolute;
@@ -623,17 +624,17 @@ ul{
     bottom: 20px;
     overflow: hidden;
     transition: var(--transition-timing);
-  }
-  .cd:hover > .cd-content {
+}
+.cd:hover > .cd-content {
     inset: 20px;
     top: auto;
-  }
+}
   
-  .cd-content > * {
+.cd-content > * {
     transition: var(--transition-timing);
-  }
+}
   
-  .cd-content > .profile-image {
+.cd-content > .profile-image {
     min-width: 50px;
     max-width: 50px;
     height: 50px;
@@ -643,26 +644,42 @@ ul{
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-  }
+}
+  
+
+.profile-image > svg{
+    padding: 0.5em;
+}
+.cd:hover .profile-image > svg {
+    animation: rotate 1s ease;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
   
-  .cd-content > .title {
+.cd-content > .title {
     white-space: pre;
     margin-left: 10px;
     translate: 0 100%;
     opacity: 0;
-  }
-  .cd:hover .title {
+}
+.cd:hover .title {
     opacity: 1;
     translate: 0 0;
-  }
+}
   
-  .cd > .backdrop {
+.cd > .backdrop {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 20vh;
+    height: 15vh;
     z-index: 0;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
-  }
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+}
