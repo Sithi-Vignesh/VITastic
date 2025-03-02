@@ -427,6 +427,68 @@ ul{
     }
 
 
+    .container{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,40vh);
+        gap: 3vw !important;
+    }
+    .forfood{
+        height: 220vh !important;
+    }
+
+    .cd > .background {
+        filter: none !important;
+        transition: none !important;
+    }
+    
+    .cd > .cd-content {
+        transition: none !important;
+    }
+    
+    .cd-content > * {
+        transition: none !important;
+    }
+    
+    .cd:hover .profile-image > svg {
+        animation: none !important;
+        color: white !important;
+    }
+    
+    .cd:hover .ent > svg {
+        animation: none !important;
+        color: white !important;
+    }
+    
+    .cd-content > .title, .cd:hover .title {
+        translate: none !important;
+        opacity: 1 !important;
+    }
+    .cd:hover > .cd-content {
+        left: 10px !important;
+        right: 10px !important;
+        bottom: 20px !important;
+    }
+    .cd > .cd-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cd-content > .title {
+        white-space: normal !important;
+        overflow: visible !important;
+        text-align: center !important;
+    }
+    .container > .cd:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .cd{
+        border-radius: 10px !important;
+        box-shadow: black 1px 0px 3px 0px;
+    }
+
+
 }
 
 @media (max-width: 800px) {
@@ -539,6 +601,69 @@ ul{
         width: 200%;
     }
     
+
+    .container{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,40vh);
+        gap: 3vw !important;
+    }
+    .forfood{
+        height: 220vh !important;
+    }
+
+    .cd > .background {
+        filter: none !important;
+        transition: none !important;
+    }
+    
+    .cd > .cd-content {
+        transition: none !important;
+    }
+    
+    .cd-content > * {
+        transition: none !important;
+    }
+    
+    .cd:hover .profile-image > svg {
+        animation: none !important;
+        color: white !important;
+    }
+    
+    .cd:hover .ent > svg {
+        animation: none !important;
+        color: white !important;
+    }
+    
+    .cd-content > .title, .cd:hover .title {
+        translate: none !important;
+        opacity: 1 !important;
+    }
+    .cd:hover > .cd-content {
+        left: 10px !important;
+        right: 10px !important;
+        bottom: 20px !important;
+    }
+    .cd > .cd-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cd-content > .title {
+        white-space: normal !important;
+        overflow: visible !important;
+        text-align: center !important;
+    }
+    .container > .cd:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .cd{
+        border-radius: 10px !important;
+        box-shadow: black 1px 0px 3px 0px;
+    }
+    
+    
 }
 
 
@@ -603,12 +728,13 @@ ul{
 }
   
 .cd > .background {
+    width: 100%;
+    height: 100%;
     position: absolute;
     inset: 0;
     object-fit: cover;
     object-position: center;
     filter: brightness(0.7);
-    z-index: -1;
     transition: var(--transition-timing) ease;
 }
 .cd:hover > .background {
@@ -649,9 +775,16 @@ ul{
 
 .profile-image > svg{
     padding: 0.5em;
+    z-index: 1;
+    color: white;
 }
 .cd:hover .profile-image > svg {
     animation: rotate 1s ease;
+    color:#2db400;
+}
+.cd:hover .ent > svg {
+    animation: rotate 1s ease;
+    color:#ff7e00;
 }
 @keyframes rotate {
     0% {
@@ -668,6 +801,9 @@ ul{
     margin-left: 10px;
     translate: 0 100%;
     opacity: 0;
+    color: white;
+    z-index: 1;
+    font-family: sans-serif;
 }
 .cd:hover .title {
     opacity: 1;
@@ -681,5 +817,5 @@ ul{
     bottom: 0;
     height: 15vh;
     z-index: 0;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
 }
