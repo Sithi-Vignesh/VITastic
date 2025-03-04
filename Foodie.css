@@ -76,6 +76,147 @@ nav{
     display: none;
 }
 
+
+
+
+.maingrid{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.filterbar{
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    border-radius: 20px;
+}
+.conts {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 10px;
+}
+
+.cont {
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.6);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont-img{
+    width: 23%;
+    aspect-ratio: 1/1;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+.cont-content{
+    width: 70%;
+    height: 26vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 10px;
+    gap: 10px;
+}
+.cont-name{
+    width: 50%;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.cont-rating{
+    width: 30%;
+    height: 3vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.cont-desc{
+    width: 70%;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.desc-crd{
+    width: 20%;
+    height: 2.5vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+
+
+
+
+.conts.single-column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cont.toggle {
+    background-color: rgba(128, 128, 128, 0.6);
+    height: 50vh;
+    position: relative;
+}
+
+
+
+#toggleButton{
+    position: absolute;
+    right: 2%;
+    top: 20vh;
+    background-color: #38b6ff;
+    border: 0;
+    padding: 5px;
+    border-radius: 10px;
+}
+.toggleline {
+    display: none;
+}
+
+.toggleline.longline {
+    display: block;
+}
+.toggleline1.longline {
+    display: none;
+}
+
+.cont-img.imgresize{
+    width: 60%;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+}
+
+.cont-content.contentresize{
+    width: 90%;
+    position: relative;
+    top: 10%;
+    height: 30vh;
+}
+.cont-name.nameresize{
+    width: 80%;
+}
+.cont-rating.ratingresize{
+    width: 50%;
+}
+.cont-desc.descresize{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
 footer{
     margin: 0;
     padding: 0;
@@ -99,7 +240,7 @@ ul{
 }
 
 .flogo{
-    width: 90%;
+    width: 80%;
     text-align: center;
 }
 .footlogo{
@@ -138,31 +279,37 @@ ul{
 }
 
 
-.hamburger{
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.hamburger {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5vh;
     justify-content: space-around;
     position: fixed;
-    margin: 0;
-    padding: 0;
     top: 8.5vh;
-    right: 0;
-    width: 40%;
-    backdrop-filter: blur(30px);
-    box-shadow: 0 0 30px rgba(227, 228, 237, 0.4);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    right: -100%;
+    width: 60%;
+    background: url(./imgs/linen\ textute.jpg);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     height: auto;
-    z-index: 1;
+    z-index: 4;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    display: none;
-
-}
-.n1{
+    cursor: pointer;
+    transition: right 1s ease;
+    border-radius: 0px 0px 0px 30px;
+  }
+  
+  .hamburger.show {
+    right: 0;
+  }
+  .n1{
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     text-decoration: none;
@@ -191,6 +338,50 @@ ul{
     .connect{
         width: 80%;
     }
+    .filterbar{
+        display: none;
+    }
+    .conts{
+        width: 95%;
+    }
+    .cont{
+        height: 40vh;
+    }
+    .cont-content.contentresize{
+        width: 90%;
+        position: relative;
+        top: 15%;
+        height: 30vh;
+    }
+    .cont-name.nameresize{
+        width: 70%;
+        height: 6vh;
+    }
+    .cont-rating.ratingresize{
+        width: 40%;
+        height: 2.5vh;
+    }
+    .cont-desc.descresize{
+        width: 80%;
+        height: 4vh;
+    }
+    #toggleButton{
+        right: 3%;
+        padding: 10px;
+    }
+    .cont-name{
+        height: 8vh;
+    }
+    .cont-rating{
+        height: 4vh;
+    }
+    .cont-desc{
+        height: 6vh;
+    }
+    .desc-crd{
+        height: 3vh;
+    }
+
 }
 
 @media (min-width: 800px) and (max-width: 1024px){
@@ -261,6 +452,53 @@ ul{
     .card{
         height: 300px;
     }
+    .home::after, .suggest::after, .search::after, .foodie::after, .gamez::after {
+        width: 0;
+        height: 0;
+    }
+    .filterbar{
+        display: none;
+    }
+    .conts{
+        width: 95%;
+    }
+    .cont{
+        height: 40vh;
+    }
+    .cont-content.contentresize{
+        width: 90%;
+        position: relative;
+        top: 15%;
+        height: 30vh;
+    }
+    .cont-name.nameresize{
+        width: 70%;
+        height: 6vh;
+    }
+    .cont-rating.ratingresize{
+        width: 40%;
+        height: 2.5vh;
+    }
+    .cont-desc.descresize{
+        width: 80%;
+        height: 4vh;
+    }
+    #toggleButton{
+        right: 3%;
+        padding: 10px;
+    }
+    .cont-name{
+        height: 8vh;
+    }
+    .cont-rating{
+        height: 4vh;
+    }
+    .cont-desc{
+        height: 6vh;
+    }
+    .desc-crd{
+        height: 3vh;
+    }
 
 
 }
@@ -329,6 +567,66 @@ ul{
     }
     .mobilevw{
         width: 200%;
+    }
+    .home::after, .suggest::after, .search::after, .foodie::after, .gamez::after {
+        width: 0;
+        height: 0;
+    }
+    .filterbar{
+        display: none;
+    }
+    .conts{
+        width: 95%;
+    }
+    .cont{
+        height: 30vh;
+        gap: 20px;
+    }
+    .cont-content.contentresize{
+        width: 90%;
+        position: relative;
+        top: 10%;
+        height: 30vh;
+    }
+    .cont-name.nameresize{
+        width: 80%;
+        height: 6vh;
+    }
+    .cont-rating.ratingresize{
+        width: 50%;
+        height: 2.5vh;
+    }
+    .cont-desc.descresize{
+        width: 90%;
+        height: 4vh;
+    }
+    #toggleButton{
+        right: 3%;
+        padding: 10px;
+    }
+    .cont-name{
+        height: 6vh;
+        width: 80%;
+    }
+    .cont-rating{
+        height: 3vh;
+    }
+    .cont-desc{
+        height: 5vh;
+        width: 90%;
+    }
+    .desc-crd{
+        height: 2.5vh;
+    }
+    .conts.single-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cont-img{
+        width: 50%;
+        margin-left: 5px;
+    }
+    .cont-img.imgresize{
+        width: 70%;
     }
     
 }

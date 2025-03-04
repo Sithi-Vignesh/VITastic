@@ -209,7 +209,7 @@ ul{
 }
 
 .flogo{
-    width: 90%;
+    width: 80%;
     text-align: center;
 }
 .footlogo{
@@ -263,7 +263,7 @@ ul{
     right: -100%;
     width: 60%;
     background: url(./imgs/linen\ textute.jpg);
-    box-shadow: 0 0 30px rgba(227, 228, 237, 0.4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     height: auto;
     z-index: 4;
     padding-top: 5vh;
@@ -781,6 +781,10 @@ ul{
     .visitbutton{
         font-size: 12px;
     }
+    .home::after, .suggest::after, .search::after, .foodie::after, .gamez::after {
+        width: 0;
+        height: 0;
+    }
 
 }
 
@@ -987,4 +991,8 @@ ul{
     .next {
         bottom: 5rem !important;
     }  
+    .home::after, .suggest::after, .search::after, .foodie::after, .gamez::after {
+        width: 0;
+        height: 0;
+    }
 }

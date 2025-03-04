@@ -1,10 +1,23 @@
-document.querySelector('.hamburger-icon').style.cursor = 'pointer';
-
 document.querySelector('.hamburger-icon').addEventListener('click', function() {
     const menu = document.querySelector('.hamburger');
-    if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'flex';
+    if (menu.classList.contains('show')) {
+      menu.classList.remove('show');
     } else {
-        menu.style.display = 'none';
+      menu.classList.add('show');
     }
-});
+  });
+
+  document.addEventListener('click', function(event) {
+    const menu = document.querySelector('.hamburger');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    if (!menu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+      menu.classList.remove('show');
+    }
+  });
+  document.addEventListener('scroll', function(event) {
+    const menu = document.querySelector('.hamburger');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    if (!menu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+      menu.classList.remove('show');
+    }
+  });

@@ -51,7 +51,7 @@ prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
 
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 3000);
+    autoSlideInterval = setInterval(nextSlide, 5000);
 }
 
 function stopAutoSlide() {
