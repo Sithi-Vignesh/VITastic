@@ -594,6 +594,11 @@ ul{
         right: 3%;
         padding: 10px;
     }
+    .toggleFilter{
+        display: block;
+        top: 18vh;
+        right: 10%;
+    }
 
 }
 
@@ -697,6 +702,11 @@ ul{
     }
     .desc-crd{
         font-size: 15px;
+    }
+    .toggleFilter{
+        display: block;
+        top: 12vh;
+        right: 10%;
     }
 
 
