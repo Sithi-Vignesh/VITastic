@@ -103,7 +103,8 @@ nav{
 .cont {
     height: 30vh;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.6);
+    backdrop-filter: blur(3px);
+    border: 1px solid black;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
@@ -124,34 +125,32 @@ nav{
     justify-content:flex-end;
     padding: 10px;
     gap: 10px;
+    font-family: sans-serif;
 }
 .cont-name{
-    width: 50%;
-    height: 7vh;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
+    font-size: 40px;
+    font-weight: 600;
 }
 .cont-rating{
-    width: 30%;
-    height: 3vh;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    font-size: 20px;
 }
 .cont-desc{
-    width: 70%;
     height: 5vh;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
 }
 .desc-crd{
-    width: 20%;
-    height: 2.5vh;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    background-color: #4CAF50; 
+    color: white;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 
@@ -162,7 +161,6 @@ nav{
 }
 
 .cont.toggle {
-    background-color: rgba(128, 128, 128, 0.6);
     height: 50vh;
     position: relative;
 }
@@ -177,7 +175,40 @@ nav{
     border: 0;
     padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.toggleFilter{
+    position: absolute;
+    right: 20%;
+    top: 18vh;
+    background-color: #38b6ff;
+    border: 0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+.filterbar.show {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 7vh; 
+    width: 80%;
+    height: auto;
+    z-index: 4;
+    background: url(./imgs/linen\ textute.jpg);
+    background-size: cover;
+    border: 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 30px 0px 0px 30px;
+}
+
+
+.filtersvg{
+    padding: 5px;
+}
+
 .toggleline {
     display: none;
 }
@@ -200,16 +231,16 @@ nav{
     width: 90%;
     position: relative;
     top: 10%;
-    height: 30vh;
 }
 .cont-name.nameresize{
-    width: 80%;
+    font-size: 25px;
 }
 .cont-rating.ratingresize{
-    width: 50%;
+    font-size: 15px;
 }
 .cont-desc.descresize{
-    width: 90%;
+    font-size: 15px;
+    flex-wrap: wrap;
 }
 
 
@@ -304,7 +335,7 @@ nav{
 }
 
 .dropbtn:hover {
-    background: linear-gradient(to right, white, gray);
+    background: linear-gradient(to right, white, #7ed957);
   }
   
 
@@ -332,7 +363,7 @@ nav{
 }
 
 .dropdown-content .tags:hover {
-    background-color: #ddd;
+    background-color: #7ed957;
 }
 
 .dropdown-content .tags.toggled {
@@ -516,7 +547,7 @@ ul{
     padding-bottom: 5vh;
     cursor: pointer;
     transition: right 1s ease;
-    border-radius: 0px 0px 0px 30px;
+    border-radius: 30px 0px 0px 30px;
   }
   
   .hamburger.show {
@@ -559,42 +590,9 @@ ul{
     .conts{
         width: 95%;
     }
-    .cont{
-        height: 40vh;
-    }
-    .cont-content.contentresize{
-        width: 90%;
-        position: relative;
-        top: 15%;
-        height: 30vh;
-    }
-    .cont-name.nameresize{
-        width: 70%;
-        height: 6vh;
-    }
-    .cont-rating.ratingresize{
-        width: 40%;
-        height: 2.5vh;
-    }
-    .cont-desc.descresize{
-        width: 80%;
-        height: 4vh;
-    }
     #toggleButton{
         right: 3%;
         padding: 10px;
-    }
-    .cont-name{
-        height: 8vh;
-    }
-    .cont-rating{
-        height: 4vh;
-    }
-    .cont-desc{
-        height: 6vh;
-    }
-    .desc-crd{
-        height: 3vh;
     }
 
 }
@@ -678,41 +676,27 @@ ul{
         width: 95%;
     }
     .cont{
-        height: 40vh;
+        height: 25vh;
     }
-    .cont-content.contentresize{
-        width: 90%;
-        position: relative;
-        top: 15%;
-        height: 30vh;
-    }
-    .cont-name.nameresize{
-        width: 70%;
-        height: 6vh;
-    }
-    .cont-rating.ratingresize{
-        width: 40%;
-        height: 2.5vh;
-    }
-    .cont-desc.descresize{
-        width: 80%;
-        height: 4vh;
+    .conts.single-column {
+        grid-template-columns: repeat(2, 1fr);
     }
     #toggleButton{
         right: 3%;
+        top: 12%;
         padding: 10px;
     }
     .cont-name{
-        height: 8vh;
+        font-size: 50px;
     }
     .cont-rating{
-        height: 4vh;
+        font-size: 20px;
     }
-    .cont-desc{
-        height: 6vh;
+    .cont.toggle{
+        height: 38vh;
     }
     .desc-crd{
-        height: 3vh;
+        font-size: 15px;
     }
 
 
@@ -794,25 +778,10 @@ ul{
         width: 95%;
     }
     .cont{
-        height: 30vh;
+        height: 40vh;
         gap: 20px;
     }
-    .cont-content.contentresize{
-        width: 90%;
-        position: relative;
-        top: 10%;
-        height: 30vh;
-    }
-    .cont-name.nameresize{
-        width: 80%;
-        height: 6vh;
-    }
-    .cont-rating.ratingresize{
-        width: 50%;
-        height: 2.5vh;
-    }
     .cont-desc.descresize{
-        width: 90%;
         height: 4vh;
     }
     #toggleButton{
@@ -820,18 +789,16 @@ ul{
         padding: 10px;
     }
     .cont-name{
-        height: 6vh;
-        width: 80%;
+        font-size: 30px;
     }
     .cont-rating{
-        height: 3vh;
+        font-size: 15px;
     }
     .cont-desc{
-        height: 5vh;
-        width: 90%;
+        flex-wrap: wrap;
     }
     .desc-crd{
-        height: 2.5vh;
+        font-size: 10px;
     }
     .conts.single-column {
         grid-template-columns: repeat(2, 1fr);
@@ -844,7 +811,10 @@ ul{
         width: 80%;
     }
     .cont.toggle{
-        height: 40vh;
+        height: 45vh;
     }
     
+    .toggleFilter{
+        display: block;
+    }
 }

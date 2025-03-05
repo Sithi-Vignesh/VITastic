@@ -111,8 +111,8 @@ document.querySelector('.clear-filters-btn').addEventListener('click', function 
     tag.classList.remove('toggled');
   });
 
-  document.getElementById('distanceSlider').value = 0; // Reset the slider value
-  document.getElementById('distanceValue').textContent = '0 km'; // Reset the displayed value
+  document.getElementById('distanceSlider').value = 0;
+  document.getElementById('distanceValue').textContent = '0 km';
 
   updateSelectedFilters();
 });
@@ -136,3 +136,21 @@ document.querySelector('.apply-btn').addEventListener('click', function() {
   document.querySelector('.selected-filters').style.display = 'flex';
 });
 
+document.querySelector('.toggleFilter').addEventListener('click', function(event) {
+  event.stopPropagation();
+  const menu = document.querySelector('.filterbar');
+  menu.classList.toggle('show');
+});
+
+document.addEventListener('click', function(event) {
+  const menu = document.querySelector('.filterbar');
+  if (!menu.contains(event.target) && !event.target.closest('.toggleFilter')) {
+    menu.classList.remove('show');
+  }
+});
+document.addEventListener('scroll', function(event) {
+  const menu = document.querySelector('.filterbar');
+  if (!menu.contains(event.target) && !event.target.closest('.toggleFilter')) {
+    menu.classList.remove('show');
+  }
+});
