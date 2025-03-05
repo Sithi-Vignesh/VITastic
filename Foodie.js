@@ -64,16 +64,75 @@ document.getElementById('toggleButton').addEventListener('click', function() {
   var conts = document.querySelectorAll('.cont-desc');
   conts.forEach(function(cont) {
       cont.classList.toggle('descresize');
-  });
-  
-
+  });  
 });
 
+document.querySelectorAll('.dropbtn').forEach(button => {
+  button.addEventListener('click', function () {
+    const dropdownContent = this.nextElementSibling;
+    dropdownContent.classList.toggle('show');
 
+    document.querySelectorAll('.dropdown-content').forEach(content => {
+      if (content !== dropdownContent) {
+        content.classList.remove('show');
+      }
+    });
+  });
+});
 
+document.querySelectorAll('.dropdown-content .tags').forEach(tag => {
+  tag.addEventListener('click', function () {
+    this.classList.toggle('toggled');
+    updateSelectedFilters();
+  });
+});
 
+function updateSelectedFilters() {
+  const filterTagsContainer = document.querySelector('.filter-tags');
+  filterTagsContainer.innerHTML = '';
 
+  const selectedTags = document.querySelectorAll('.dropdown-content .tags.toggled');
+  if (selectedTags.length > 0) {
+    document.querySelector('.selected-filters').style.display = 'flex';
+  } else {
+    document.querySelector('.selected-filters').style.display = 'none';
+  }
 
+  selectedTags.forEach(tag => {
+    const selectedTag = document.createElement('div');
+    selectedTag.classList.add('tags');
+    selectedTag.textContent = tag.textContent;
+    filterTagsContainer.appendChild(selectedTag);
+  });
+}
 
+document.querySelector('.clear-filters-btn').addEventListener('click', function () {
+  document.querySelectorAll('.dropdown-content .tags.toggled').forEach(tag => {
+    tag.classList.remove('toggled');
+  });
 
+  document.getElementById('distanceSlider').value = 0; // Reset the slider value
+  document.getElementById('distanceValue').textContent = '0 km'; // Reset the displayed value
+
+  updateSelectedFilters();
+});
+
+const slider = document.getElementById('distanceSlider');
+const output = document.getElementById('distanceValue');
+
+slider.addEventListener('input', function() {
+  output.textContent = `${this.value} km`;
+});
+
+document.querySelector('.apply-btn').addEventListener('click', function() {
+  const distanceValue = `${slider.value} km`;
+
+  const filterTagsContainer = document.querySelector('.filter-tags');
+  const distanceTag = document.createElement('div');
+  distanceTag.classList.add('tags');
+  distanceTag.textContent = distanceValue;
+  filterTagsContainer.appendChild(distanceTag);
+
+  document.querySelector('.selected-filters').style.display = 'flex';
+});
 

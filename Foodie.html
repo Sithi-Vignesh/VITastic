@@ -62,9 +62,90 @@
 
     <div class="maingrid">
         <div class="filterbar">
-            <div class="type-filters"></div>
-            <div class="ratings-filter"></div>
-            <div class="dist-filter"></div>
+            <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+              </svg> Filters</div>
+              <div class="selected-filters">
+                <p>Selected Filters:</p>
+                <div class="filter-tags"></div>
+                <button class="clear-filters-btn">Clear Filters</button>
+            </div>
+            <div class="type-filters">
+                <div class="dropdown">
+                    <button class="dropbtn">Cuisine</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="South Indian">South Indian</div>
+                        <div class="tags" data-tag="North Indian">North Indian</div>
+                        <div class="tags" data-tag="Korean">Korean</div>
+                        <div class="tags" data-tag="Japanese">Japanese</div>
+                        <div class="tags" data-tag="Chinese">Chinese</div>
+                        <div class="tags" data-tag="Multi-Cusine">Multi-Cusine</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Diet</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Veg">Veg</div>
+                        <div class="tags" data-tag="Non-veg">Non-veg</div>
+                        <div class="tags" data-tag="Mixed">Mixed</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Group</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Family">Family</div>
+                        <div class="tags" data-tag="Small Groups">Small Groups(5-7)</div>
+                        <div class="tags" data-tag="Party">Party</div>
+                        <div class="tags" data-tag="Couples">Couples</div>
+                        <div class="tags" data-tag="Solo">Solo</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Food Type</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Fast Food">Fast Food</div>
+                        <div class="tags" data-tag="Snacks">Snacks</div>
+                        <div class="tags" data-tag="Drinks">Drinks</div>
+                        <div class="tags" data-tag="Ice-Creams">Ice-Creams</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Extras</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Games">+ Games</div>
+                        <div class="tags" data-tag="Ambience">Ambience</div>
+                        <div class="tags" data-tag="Air Conditioned">Air Conditioned</div>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">Distance</button>
+                    <div class="dropdown-content">   
+                        <div class="slider-container">
+                            <input type="range" min="0" max="10" value="0" class="slider" id="distanceSlider">
+                            <div class="distance-box">
+                                <span id="distanceValue">0 km</span>
+                            </div>
+                            <button class="apply-btn">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Rating</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Stars-5">⭐⭐⭐⭐⭐</div>
+                        <div class="tags" data-tag="Stars-4+">⭐⭐⭐⭐ & Above</div>
+                        <div class="tags" data-tag="Stars-3+">⭐⭐⭐ & Above</div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+            
+            
         </div>
         <div class="conts">
             <div class="cont">
