@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VITastic(Foodie)</title>
-    <link rel="stylesheet" href="Foodie.css">
+    <link rel="stylesheet" href="Gamez.css">
+    <link rel="icon" href="./logo/logo 2.png">
 </head>
 <body>
     <nav>
@@ -15,7 +16,7 @@
             <div><a class="n home" href="./Home.html">Home</a></div>
             <div><a class="n foodie" href="./Foodie.html">Foodie</a></div>
             <div><a class="n gamez" href="./Gamez.html">Gamez</a></div>
-            <div><a class="n suggest" href="#">Suggest</a></div>
+            <div><a class="n suggest" href="https://forms.gle/p4uc9UBjrCL38X2P8" target="_blank">Suggest</a></div>
             <div><a class="n search" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
             </svg> Search</a></div>
@@ -48,16 +49,233 @@
             <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
           </svg> Suggest</a></div>
     </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+    <button id="toggleButton"><svg class="toggleline1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+      </svg>
+      <svg class="toggleline" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg></button>
+      <button class="toggleFilter"><svg class='filtersvg' xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+      </svg></button>
+
+
+    <div class="maingrid">
+        <div class="filterbar">
+            <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+              </svg> Filters</div>
+              <div class="selected-filters">
+                <p>Selected Filters:</p>
+                <div class="filter-tags"></div>
+                <button class="clear-filters-btn">Clear Filters</button>
+            </div>
+            <div class="type-filters">
+                <div class="dropdown">
+                    <button class="dropbtn">Cuisine</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="South Indian">South Indian</div>
+                        <div class="tags" data-tag="North Indian">North Indian</div>
+                        <div class="tags" data-tag="Korean">Korean</div>
+                        <div class="tags" data-tag="Japanese">Japanese</div>
+                        <div class="tags" data-tag="Chinese">Chinese</div>
+                        <div class="tags" data-tag="Multi-Cusine">Multi-Cusine</div>
+                        <div class="tags" data-tag="Tandoori">Tandoori</div>
+                        <div class="tags" data-tag="BBQ">BBQ</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Diet</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Veg">Veg</div>
+                        <div class="tags" data-tag="Non-veg">Non-veg</div>
+                        <div class="tags" data-tag="Mixed">Mixed</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Group</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Family">Family</div>
+                        <div class="tags" data-tag="Small Groups">Small Groups(5-7)</div>
+                        <div class="tags" data-tag="Party">Party</div>
+                        <div class="tags" data-tag="Couples">Couples</div>
+                        <div class="tags" data-tag="Solo">Solo</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Food Type</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Fast Food">Fast Food</div>
+                        <div class="tags" data-tag="Snacks">Snacks</div>
+                        <div class="tags" data-tag="Drinks">Drinks</div>
+                        <div class="tags" data-tag="Ice-Creams">Ice-Creams</div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Extras</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Games">+ Games</div>
+                        <div class="tags" data-tag="Ambience">Ambience</div>
+                        <div class="tags" data-tag="Air Conditioned">Air Conditioned</div>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">Distance</button>
+                    <div class="dropdown-content">   
+                        <div class="slider-container">
+                            <input type="range" min="0" max="10" value="0" class="slider" id="distanceSlider">
+                            <div class="distance-box">
+                                <span id="distanceValue">0 km</span>
+                            </div>
+                            <button class="apply-btn">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Rating</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Stars-5">⭐⭐⭐⭐⭐</div>
+                        <div class="tags" data-tag="Stars-4+">⭐⭐⭐⭐ & Above</div>
+                        <div class="tags" data-tag="Stars-3+">⭐⭐⭐ & Above</div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+        <div class="conts">
+            <div class="cont">
+                <img class="cont-img" src="./imgs/entertainment/lxg_vellore.jpg">
+                <div class="cont-content">
+                    <div class="cont-name">LXG Vellore</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Multi-Cusine</div>
+                        <div class="desc-crd">Mixed</div>
+                        <div class="desc-crd">Ambience</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img class="cont-img" src="./imgs/entertainment/rnr_esports_gaming_loudge.jpg">
+                <div class="cont-content">
+                    <div class="cont-name">RNR E-Sports Gaming Loudge</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Mixed</div>
+                        <div class="desc-crd">Ambience</div>
+                        <div class="desc-crd">Multi-Cusine</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="./imgs/entertainment/go_kart_thrill_sprint.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Go Kart Thrill Sprint</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Ambience</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                        <div class="desc-crd">Group</div>
+                        <div class="desc-crd">Couples</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="./imgs/entertainment/velocity_mall.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Velocity mall</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Veg</div>
+                        <div class="desc-crd">Ambience</div>
+                        <div class="desc-crd">Multi-Cusine</div>
+                        <div class="desc-crd">Family</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="./imgs/entertainment/on_board.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">On Board</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Family</div>
+                        <div class="desc-crd">Mixed</div>
+                        <div class="desc-crd">South Indian</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="./imgs/entertainment/boardvita_cafe.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Boardvita</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Air Conditioned</div>
+                        <div class="desc-crd">South Indian</div>
+                        <div class="desc-crd">North Indian</div>
+                        <div class="desc-crd">Tandoori</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="./imgs/entertainment/vellore_fort.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Vellore Fort</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">BBQ</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                        <div class="desc-crd">Multi-Cusine</div>
+                        <div class="desc-crd">South Indian</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="./imgs/entertainment/hive_food_spot.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Hive Food Spot</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Multi-Cusine</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                        <div class="desc-crd">Non-veg</div>
+                        <div class="desc-crd">South Indian</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <img src="./imgs/entertainment/slipnkick.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Slip N Kick</div>
+                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Non-veg</div>
+                        <div class="desc-crd">Tandoori</div>
+                        <div class="desc-crd">Multi-Cusine</div>
+                        <div class="desc-crd">South Indian</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-
-
-
-
-
-
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <script src="./Foodie.js"></script>
+    <script src="./Gamez.js"></script>
 </body>
 <footer>
     <div class="footcon">

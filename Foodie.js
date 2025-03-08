@@ -148,9 +148,3 @@ document.addEventListener('click', function(event) {
     menu.classList.remove('show');
   }
 });
-document.addEventListener('scroll', function(event) {
-  const menu = document.querySelector('.filterbar');
-  if (!menu.contains(event.target) && !event.target.closest('.toggleFilter')) {
-    menu.classList.remove('show');
-  }
-});

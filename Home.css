@@ -419,6 +419,8 @@ ul{
     border-radius: 20px;
     width: 95%;
     padding: 1.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .top9txt {
@@ -459,7 +461,6 @@ ul{
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
-    cursor: pointer;
     position: relative;
     transition: flex-grow 1s cubic-bezier(0.15, 1, 0.3, 1);
     --transition-timing: 0.75s;
@@ -546,6 +547,10 @@ ul{
     color: white;
     z-index: 1;
     font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 .cd:hover .title {
     opacity: 1;
@@ -988,11 +993,17 @@ ul{
     .prev {
         bottom: 2rem !important;
     }
+    
     .next {
         bottom: 5rem !important;
     }  
+
     .home::after, .suggest::after, .search::after, .foodie::after, .gamez::after {
         width: 0;
         height: 0;
+    }
+    .cd > .backdrop {
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0));
+        height: 80%;
     }
 }
