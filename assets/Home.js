@@ -62,3 +62,32 @@ slider.addEventListener('mouseenter', stopAutoSlide);
 slider.addEventListener('mouseleave', startAutoSlide);
 
 startAutoSlide();
+
+
+
+
+function toggleSearch(event) {
+  event.preventDefault();
+  const searchBarContainer = document.getElementById('searchBarContainer');
+  if (searchBarContainer.classList.contains('show')) {
+      searchBarContainer.classList.remove('show');
+  } else {
+      searchBarContainer.style.display = 'block';
+      setTimeout(() => { searchBarContainer.classList.add('show'); }, 10);
+  }
+}
+
+document.addEventListener('click', function(event) {
+  const searchBarContainer = document.getElementById('searchBarContainer');
+  const searchLink = document.querySelector('.n.search');
+  if (!searchBarContainer.contains(event.target) && !searchLink.contains(event.target)) {
+      searchBarContainer.classList.remove('show');
+  }
+});
+document.addEventListener('scroll', function(event) {
+  const searchBarContainer = document.getElementById('searchBarContainer');
+  const searchLink = document.querySelector('.n.search');
+  if (!searchBarContainer.contains(event.target) && !searchLink.contains(event.target)) {
+      searchBarContainer.classList.remove('show');
+  }
+});

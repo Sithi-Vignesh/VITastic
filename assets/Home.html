@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VITastic (Home)</title>
-    <link rel="icon" href="./logo/logo 2.png">
+    <link rel="icon" href="../imgs/logo/logo 2.png">
     <link rel="stylesheet" href="./Home.css">    
 </head>
 <body>
     <nav>
         <div class="navlogo">
-            <a href="./index.html"><img class="nlogo mobilevw" src="./logo/logo 1.png"></a>
+            <a href="../index.html"><img class="nlogo mobilevw" src="../imgs/logo/logo 1.png"></a>
         </div>
         <div class="main">
             <div><a class="n home" href="./Home.html">Home</a></div>
             <div><a class="n foodie" href="./Foodie.html">Foodie</a></div>
             <div><a class="n gamez" href="./Gamez.html">Gamez</a></div>
             <div><a class="n suggest" href="https://forms.gle/p4uc9UBjrCL38X2P8" target="_blank">Suggest</a></div>
-            <div><a class="n search" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg> Search</a></div>
+            
+            <div>
+                <a class="n search" href="#" onclick="toggleSearch(event)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg> Search
+                </a>
+                <div class="search-bar-container" id="searchBarContainer">
+                    <input type="text" class="search-bar" placeholder="🔍 Search Anything from VITastic!">
+                </div>
+            </div>
+
             <div class="mob">
-                <div><a class="n1 search" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg></a>
+                <div>
+                    <a class="n1 search" href="#" onclick="toggleSearch(event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="hamburger-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M3.5 12.5a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9zm0-4a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9zm0-4a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9z"/>
                     </svg>
-                </div> 
+                </div>
             </div>
         </div>
     </nav>
@@ -41,7 +53,7 @@
               </svg></button>
             <div class="slider">
                 <div class="slide">
-                    <img id="slide1" src="./imgs/entertainment/velocity_mall.jpg">
+                    <img id="slide1" src="../imgs/entertainment/velocity_mall.jpg">
                     <div class="text-container">
                         <p class="s spotlight">#1 Spotlight</p>
                         <h3 class="s title">Velocity Mall</h3>
@@ -52,7 +64,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="slide2" src="./imgs/entertainment/lxg_vellore.jpg">
+                    <img id="slide2" src="../imgs/entertainment/lxg_vellore.jpg">
                     <div class="text-container">
                         <p class="s spotlight">#2 Spotlight</p>
                         <h3 class="s title">LXG Vellore</h3>
@@ -86,7 +98,7 @@
               </svg></h2>
             <div class="container">
                 <div class="cd">
-                <img class="background" src="./imgs/food/TheVelloreKitchen_21.jpeg" alt="">
+                <img class="background" src="../imgs/food/TheVelloreKitchen_21.jpeg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image">
@@ -102,7 +114,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/food/zaitoon.jpg" alt="">
+                <img class="background" src="../imgs/food/zaitoon.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image">
@@ -118,7 +130,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/food/pastel_poetry.jpg" alt="">
+                <img class="background" src="../imgs/food/pastel_poetry.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image">
@@ -134,7 +146,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/food/amritha_fine_dinning.jpg" alt="">
+                <img class="background" src="../imgs/food/amritha_fine_dinning.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image">
@@ -150,7 +162,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/food/alakar_virunthu.jpg" alt="">
+                <img class="background" src="../imgs/food/alakar_virunthu.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image">
@@ -166,7 +178,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/food/andhra-special-jaisha-grand-10404490.webp" alt="">
+                    <img class="background" src="../imgs/food/andhra-special-jaisha-grand-10404490.webp" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image">
@@ -182,7 +194,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/food/darling_namma_veedu.jpg" alt="">
+                    <img class="background" src="../imgs/food/darling_namma_veedu.jpg" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image">
@@ -198,7 +210,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/food/abiruchi.jpg" alt="">
+                    <img class="background" src="../imgs/food/abiruchi.jpg" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image">
@@ -214,7 +226,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/food/hotel_srb_briyani_center.jpg" alt="">
+                    <img class="background" src="../imgs/food/hotel_srb_briyani_center.jpg" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image">
@@ -239,7 +251,7 @@
               </svg></h2>
             <div class="container">
                 <div class="cd">
-                <img class="background" src="./imgs/entertainment/lxg_vellore.jpg" alt="">
+                <img class="background" src="../imgs/entertainment/lxg_vellore.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image ent">
@@ -255,7 +267,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/entertainment/rnr_esports_gaming_loudge.jpg" alt="">
+                <img class="background" src="../imgs/entertainment/rnr_esports_gaming_loudge.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image ent">
@@ -271,7 +283,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/entertainment/go_kart_thrill_sprint.jpg" alt="">
+                <img class="background" src="../imgs/entertainment/go_kart_thrill_sprint.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image ent">
@@ -287,7 +299,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/entertainment/velocity_mall.jpg" alt="">
+                <img class="background" src="../imgs/entertainment/velocity_mall.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image ent">
@@ -303,7 +315,7 @@
                 </div>
         
                 <div class="cd">
-                <img class="background" src="./imgs/entertainment/on_board.jpg" alt="">
+                <img class="background" src="../imgs/entertainment/on_board.jpg" alt="">
         
                 <div class="cd-content">
                     <div class="profile-image ent">
@@ -319,7 +331,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/entertainment/boardvita_cafe.jpg" alt="">
+                    <img class="background" src="../imgs/entertainment/boardvita_cafe.jpg" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image ent">
@@ -335,7 +347,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/entertainment/vellore_fort.jpg" alt="">
+                    <img class="background" src="../imgs/entertainment/vellore_fort.jpg" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image ent">
@@ -351,7 +363,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/entertainment/hive_food_spot.jpg" alt="">
+                    <img class="background" src="../imgs/entertainment/hive_food_spot.jpg" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image ent">
@@ -367,7 +379,7 @@
                 </div>
 
                 <div class="cd">
-                    <img class="background" src="./imgs/entertainment/slipnkick.jpg" alt="">
+                    <img class="background" src="../imgs/entertainment/slipnkick.jpg" alt="">
             
                     <div class="cd-content">
                     <div class="profile-image ent">
@@ -387,10 +399,10 @@
       </div>
 
       <div class="cards">
-        <div class="front-page"><a class="crd" href="./Foodie.html">
+        <div class="front-page"><a class="crd" href="./assets/Foodie.html">
             <div class="card c1 info">
                 <div class="card-side front">
-                    <h2 class="card-title"><img class="png" src="./imgs/Foodie.png"></h2>
+                    <h2 class="card-title"><img class="png" src="../imgs/Foodie.png"></h2>
                     <p class="mobilecon">Clicking this will begin your <span class="highlight">Exploration of Food Spots</span> in and around VIT</p>
                 </div>
                 <div class="card-side back b1">
@@ -398,10 +410,10 @@
                 </div>
             </div>
         </div></a>
-        <div class="front-page"><a class="crd" href="./Gamez.html">
+        <div class="front-page"><a class="crd" href="./assets/Gamez.html">
             <div class="card c2 info">
                 <div class="card-side front">
-                    <h2 class="card-title"><img class="png" src="./imgs/Gamez.png"></h2>
+                    <h2 class="card-title"><img class="png" src="../imgs/Gamez.png"></h2>
                     <p class="mobilecon">Unleash the fun! Click here to dive into the <span class="highlight">Top Entertainment Spots</span> in and around VIT</p>
                 </div>
                 <div class="card-side back b2">
@@ -423,7 +435,7 @@
             <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
             <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
           </svg> Gamez</a></div>
-        <div><a class="n1 suggest" href="#" style="display: flex; align-items: center; gap: 1vw;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+        <div><a class="n1 suggest" href="https://forms.gle/p4uc9UBjrCL38X2P8" target="_blank" style="display: flex; align-items: center; gap: 1vw;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
             <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
           </svg> Suggest</a></div>
     </div>
@@ -441,8 +453,8 @@
 <footer>
     <div class="footcon">
         <div class="footlogo">
-            <img class='flogo' src="./logo/logo1.png">
-            <img class="flogo2" src="./logo/logo 1.png">
+            <img class='flogo' src="../imgs/logo/logo1.png">
+            <img class="flogo2" src="../imgs/logo/logo 1.png">
         </div>
         <div class="foot1">
             <div class="infos">

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("./imgs/linen\ textute.jpg"); 
+    background-image: url("../imgs/linen\ textute.jpg"); 
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -198,7 +198,7 @@ nav{
     width: 80%;
     height: auto;
     z-index: 4;
-    background: url(./imgs/linen\ textute.jpg);
+    background: url(../imgs/linen\ textute.jpg);
     background-size: cover;
     border: 0;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
@@ -541,7 +541,7 @@ ul{
     top: 8.5vh;
     right: -100%;
     width: 60%;
-    background: url(./imgs/linen\ textute.jpg);
+    background: url(../imgs/linen\ textute.jpg);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     height: auto;
     z-index: 4;
@@ -832,4 +832,49 @@ ul{
     .toggleFilter{
         display: block;
     }
+    .search-bar{
+        width: 70% !important;
+        text-align: center;
+    }
+}
+
+
+
+.search-bar-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-20px);
+    background: linear-gradient(45deg, #FFFFFF, #FFEBB5, #FFFFFF, #FFF5E1);
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease-in;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.search-bar-container.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.search-bar {
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    outline: none;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
 }
