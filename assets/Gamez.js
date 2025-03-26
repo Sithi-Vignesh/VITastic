@@ -113,31 +113,10 @@ document.querySelector('.clear-filters-btn').addEventListener('click', function 
       tag.classList.remove('toggled');
   });
 
-  document.getElementById('distanceSlider').value = 0;
-  document.getElementById('distanceValue').textContent = '0 km';
-
   updateSelectedFilters();
   resetFilters();
 });
 
-const slider = document.getElementById('distanceSlider');
-const output = document.getElementById('distanceValue');
-
-slider.addEventListener('input', function() {
-  output.textContent = `${this.value} km`;
-});
-
-document.querySelector('.apply-btn').addEventListener('click', function() {
-  const distanceValue = `${slider.value} km`;
-
-  const filterTagsContainer = document.querySelector('.filter-tags');
-  const distanceTag = document.createElement('div');
-  distanceTag.classList.add('tags');
-  distanceTag.textContent = distanceValue;
-  filterTagsContainer.appendChild(distanceTag);
-
-  document.querySelector('.selected-filters').style.display = 'flex';
-});
 
 document.querySelector('.toggleFilter').addEventListener('click', function(event) {
   event.stopPropagation();
@@ -206,3 +185,47 @@ function resetFilters() {
       content.style.display = '';
   });
 }
+
+function toggleSearch(event) {
+  event.preventDefault();
+  const searchBarContainer = document.getElementById('searchBarContainer');
+  const toggleButton = document.getElementById('toggleButton');
+
+  if (searchBarContainer.classList.contains('show')) {
+    searchBarContainer.classList.remove('show');
+    setTimeout(() => {
+      searchBarContainer.style.display = 'none'; 
+      toggleButton.style.display = 'block'; 
+    }, 300); 
+  } else {
+    searchBarContainer.style.display = 'block'; 
+    toggleButton.style.display = 'none'; 
+    setTimeout(() => {
+      searchBarContainer.classList.add('show');
+    }, 10);
+  }
+}
+
+document.addEventListener('click', function (event) {
+  const searchBarContainer = document.getElementById('searchBarContainer');
+  const searchLink = document.querySelector('.n.search');
+  const toggleButton = document.getElementById('toggleButton'); 
+
+  if (
+    !searchBarContainer.contains(event.target) &&
+    !searchLink.contains(event.target)
+  ) {
+    searchBarContainer.classList.remove('show');
+  }
+});
+
+document.addEventListener('scroll', function () {
+  const searchBarContainer = document.getElementById('searchBarContainer');
+  const toggleButton = document.getElementById('toggleButton'); 
+
+  searchBarContainer.classList.remove('show');
+  setTimeout(() => {
+    searchBarContainer.style.display = 'none';
+    toggleButton.style.display = 'block';
+  }, 300);
+});

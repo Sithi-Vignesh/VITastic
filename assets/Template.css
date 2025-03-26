@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../imgs/linen\ textute.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    height: 6.5vh;
+    z-index: 1;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.navlogo{
+    width: 10%;
+    justify-content: flex-start;
+}
+.nlogo{
+    width: 90%;
+    padding-left: 20%;
+}
+.n{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.home:hover, .suggest:hover, .search:hover{
+    color: #38b6ff;
+}
+
+.foodie:hover{
+    color: #7ed957;
+}
+
+.gamez:hover{
+    color: #ff914d;
+}
+
+.home::after, .suggest::after, .search::after, .foodie::after, .gamez::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.home:hover::after, .suggest:hover::after, .search:hover::after, 
+.foodie:hover::after, .gamez:hover::after {
+    transform: scaleX(1);
+}
+
+.mobilecon{
+    display: none;
+}nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    height: 6.5vh;
+    z-index: 1;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.navlogo{
+    width: 10%;
+    justify-content: flex-start;
+}
+.nlogo{
+    width: 90%;
+    padding-left: 20%;
+}
+.n{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.home:hover, .suggest:hover, .search:hover{
+    color: #38b6ff;
+}
+
+.foodie:hover{
+    color: #7ed957;
+}
+
+.gamez:hover{
+    color: #ff914d;
+}
+
+.home::after, .suggest::after, .search::after, .foodie::after, .gamez::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.home:hover::after, .suggest:hover::after, .search:hover::after, 
+.foodie:hover::after, .gamez:hover::after {
+    transform: scaleX(1);
+}
+
+.mobilecon{
+    display: none;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: sans-serif;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footcon{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.infos{
+    color: rgba(0, 0, 0, 0.7);
+}
+ul{
+    list-style-type: none;
+}
+
+.flogo{
+    width: 80%;
+    text-align: center;
+}
+.footlogo{
+    width: 30%;
+}
+
+.connect{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 5%;
+    border: 2px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    width: 60%;
+    justify-content: space-around;
+}
+.foot1{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 30%;
+}
+.cpyr8{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.flogo2{
+    display: none;
+}
+
+
+.hamburger-icon{
+    display: none;
+}
+
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    justify-content: space-around;
+    position: fixed;
+    top: 8.5vh;
+    right: -100%;
+    width: 60%;
+    background: url(../imgs/linen\ textute.jpg);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    height: auto;
+    z-index: 4;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    cursor: pointer;
+    transition: right 1s ease;
+    border-radius: 30px 0px 0px 30px;
+  }
+  
+  .hamburger.show {
+    right: 0;
+  }
+  .n1{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+
+.mob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.search-bar-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-20px);
+    background: linear-gradient(45deg, #FFFFFF, #FFEBB5, #FFFFFF, #FFF5E1);
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease-in;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.search-bar-container.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.search-bar {
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    outline: none;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}

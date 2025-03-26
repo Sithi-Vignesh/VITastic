@@ -397,72 +397,9 @@ nav{
     cursor: pointer; 
 }
 
-
-.slider {
-    width: 100%;
-    background: #ddd;
-    opacity: 0.7;
-    transition: opacity 0.2s;
-    margin-right: 10px;
-
-}
-
-.slider:hover {
-    opacity: 1;
-}
-
-.distance-box {
-    background-color: #38b6ff;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
-    width: 25%;
-    font-family: sans-serif;
-}
-.dist{
-    font-family: sans-serif;
-    font-size: 20px;
-}
-
 .tags{
     font-family: sans-serif;
 }
-
-.dropdown-content > .slider-container{
-    width: 100%;
-}
-
-.dropdown-content > svg{
-    color: #38b6ff;
-}
-.apply-btn {
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #f9f9f9; 
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
-    margin: 5px;
-    cursor: pointer; 
-  }
-  
-  .apply-btn:hover {
-    background-color: #ddd;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer{
