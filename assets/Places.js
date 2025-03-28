@@ -1,0 +1,68 @@
+
+const places = [
+{
+    name: "The Vellore Kitchen",
+    coverImg: "../imgs/food/TheVelloreKitchen_21.jpeg",
+    rating: "Rating : 4 / 5",
+    description: "The Vellore Kitchen  is a classic Indian Kitchen. Rooted in classic tradition, we provide customers with an elegant and vibrant dining atmosphere, award-winning cuisine, making every meal with us an unforgettable experience. The Vellore Kitchen (TVK) has professional Chefs, who have innate love for cooking and have worked and gained experience in the star hotels. The Vellore Kitchen is one of the expertises in the art of cooking and dining at TVK is an experience you’ll want to share with everyone, as the taste, texture, color, odor and presentation are astonishingly best, one could experience. It provides South Indian, North Indian, Chinese and Continental food varieties at one roof. TVK is a multi-cuisine restaurant and a right destination for the Non-vegetarian food lovers.",
+    tags: ["Inside Vellore","Multi-Cusine", "Mixed", "Ambience", "Air Conditioned","South Indian", "North Indian", "Chinese", "Tandoori", "Continental"],
+    openingHours: "6.30 AM - 10.30 PM",
+    specialFeatures: ["Family Friendly", "Free Wi-Fi"],
+    popularDishes: ["Paneer Butter Masala", "Garlic Naan", "Chicken Biryani"],
+    location: "https://maps.app.goo.gl/uhCHqDWSLn9r8NT8A",
+    contactNumber: "08489923330",
+    menuLink: "https://www.thevellorekitchen.in/index.php/menus/",
+    address: "W4GJ+228 New Bangalore Service Road, No: 1, Near Green Circle, NH 46 Service Rd, Vellore, Tamil Nadu 632004",
+    email: "booking@thevellorekitchen.in",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66268.73185065536!2d79.06005569861942!3d12.931502438360338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad3890d414712f%3A0xf84926ba984eadb0!2sThe%20Vellore%20Kitchen!5e1!3m2!1sen!2sin!4v1743156644098!5m2!1sen!2sin"
+},
+{
+    name: "Zaitoon",
+    coverImg: "../imgs/food/zaitoon.jpg",
+    rating: "Ratining : 4.8 / 5",
+    description: "The Signature restaurant boasts an exquisite lunch and dinner menu, with a local and international cuisine list for even the most discerning palate: the illustrious food tales and a soon-to-be urban legend. The restaurant befits quality time spent with family, friends, or colleagues, celebrating moments; birthdays, business deals, or enjoying a romantic night out. Our master chefs have curated a culinary collection that includes exclusive, trendy, nutritious, and celebrated global flavors.",
+    tags: ["Inside Vellore","Multi-Cusine", "Mixed", "Ambience", "Air Conditioned","South Indian", "North Indian", "Chinese", "Tandoori", "Continental"],
+    openingHours: "11 AM - 11:30 PM",
+    specialFeatures: ["Private Dining", "Live Music"],
+    popularDishes: ["Shawarma", "Mutton Mandi", "Falafel Platter"],
+    location: "https://maps.app.goo.gl/eDnSYjSz9HMSkoYGA",
+    contactNumber: "09087111211",
+    menuLink: "https://drive.google.com/file/d/1YcsIfzlP2yXDutu-3IDuM5RhqJzMNZuK/view?usp=sharing",
+    address: "1st floor, Selvam Square, Tiruvalam Rd, Selvam Nagar, Katpadi, Vellore, Tamil Nadu 632007",
+    email: "info@zaitoon.com.pk",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4141.187626406152!2d79.14779887535069!3d12.968089387346952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47f763c85d59%3A0x2f4f7b4f49d37f24!2sZaitoon%20Restaurant%2C%20Vellore!5e1!3m2!1sen!2sin!4v1743182953917!5m2!1sen!2sin"
+},
+{
+    name: "Pastel Poetry",
+    coverImg: "../imgs/food/pastel_poetry.jpg",
+    rating: "Rating : 4.6 / 5",
+    description: "A serene and Instagrammable cafe offering a mix of South Indian, North Indian, Chinese, and Continental cuisines.The Rangalaya Royal Hotel is a world class hotel that is centrally located in Vellore's popular Gandhi Nagar area on Chittoor road. This boutique hotel adjacent to the Rangalaya Kalyana Mandapam, a popular and landmark wedding hall in the area.",
+    tags: ["Around VIT","Ambience", "Air Conditioned", "Group", "Couples", "Multi-Cuisine","Chinese"],
+    openingHours: "7:30-10 AM, 12:30-3:15 PM, 7:30-10:15 PM",
+    specialFeatures: ["Peaceful Ambience", "Indoor Seating", "Table Booking Recommended"],
+    popularDishes: ["Chinese Chicken", "Bastilla", "Pasteles"],
+    address: "60/1, Vellore - Chittoor Rd, Suthanthira Ponvizha Nagar, Venkatraman Nagar, Gandhi Nagar, Vellore, Tamil Nadu 632006",
+    contactNumber: "07094481810",
+    email: "reservations@rangalayaroyal.in",
+    location: "https://maps.app.goo.gl/pz4ervYBBBNNYsdZ9",
+    menuLink: "https://pastelpoetrymenu.com/menu.pdf",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4141.39469008724!2d79.13445947535048!3d12.955642887358309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47842fea816b%3A0x56d219c0044e50e9!2sPastel%20Poetry!5e1!3m2!1sen!2sin!4v1743183513632!5m2!1sen!2sin%22"
+},
+{
+    name: "Amritha Fine Dining",
+    coverImg: "../imgs/food/amritha_fine_dinning.jpg",
+    rating: "Rating: 4.6 / 5",
+    description: "Amirtha Fine Dining is a premium vegetarian restaurant that takes you on a culinary journey like no other. As part of the prestigious Darling Group, Amirtha represents the perfect blend of tradition and innovation, bringing you a dining experience that celebrates the rich heritage of vegetarian cuisine. From authentic South Indian delicacies to contemporary vegetarian masterpieces, every dish at Amirtha is crafted with the finest ingredients, ensuring a feast for your taste buds. Our serene ambiance, impeccable service, and dedication to quality make us the ideal destination for family gatherings, celebrations, and memorable dining moments",
+    tags: ["South Indian","North Indian","Chinese","Multi-Cusine","Veg","Family","Ambience","Air Conditioned"],
+    openingHours: "7 AM - 10:00 PM",
+    specialFeatures: ["Pure Vegetarian", "Family Friendly", "Indoor Seating"],
+    popularDishes: ["Paneer Butter Masala", "Veg Biryani", "Gobi Manchurian"],
+    address: "Katpadi - Vellore Rd, Suthanthira Ponvizha Nagar, Bharathi Nagar, Gandhi Nagar, Vellore, Tamil Nadu 632006",
+    contactNumber: "09047139999",
+    email: "amirthavegclassic@gmail.com",
+    location: "https://maps.app.goo.gl/DeBz5Do1Mxns8651A",
+    menuLink: "https://amirthafinedining.com/",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4141.473775673966!2d79.13417777535044!3d12.95088598736259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47b373a17335%3A0x88a71872529dc036!2sAmirtha%20fine%20dining!5e1!3m2!1sen!2sin!4v1743185654445!5m2!1sen!2sin"
+},
+// Add more restaurants here
+];

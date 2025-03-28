@@ -112,6 +112,11 @@ nav{
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+.cont:hover{
+    background: linear-gradient(to right, #FFFFFF, #DFFFD6, #FFFFFF, #E8FFE8);
+    cursor: pointer;
+    border:1px solid #7ed957;
+}
 .cont-img{
     width: 20%;
     aspect-ratio: 1/1;
@@ -136,6 +141,7 @@ nav{
 .cont-rating{
     border-radius: 10px;
     font-size: 20px;
+    color:#ff9800;
 }
 .cont-desc{
     height: 5vh;
@@ -337,8 +343,10 @@ nav{
 }
 
 .dropbtn:hover {
-    background: linear-gradient(to right, white, #7ed957);
-  }
+    background: linear-gradient(to right, #FFFFFF, #DFFFD6, #FFFFFF, #E8FFE8);
+    cursor: pointer;
+    border:1px solid #7ed957;
+}
   
 
 
@@ -509,6 +517,46 @@ ul{
     position: absolute;
     top: 20%;
     right: 5%;
+}
+
+
+.search-bar-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-20px);
+    background: linear-gradient(45deg, #FFFFFF, #FFEBB5, #FFFFFF, #FFF5E1);
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease-in;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.search-bar-container.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.search-bar {
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    outline: none;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
 }
 
 
@@ -773,44 +821,4 @@ ul{
         width: 70% !important;
         text-align: center;
     }
-}
-
-
-.search-bar-container {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    transform: translateY(-20px);
-    background: linear-gradient(45deg, #FFFFFF, #FFEBB5, #FFFFFF, #FFF5E1);
-    width: 100%;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease-in;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-    border-radius: 0px 0px 50px 50px;
-}
-
-.search-bar-container.show {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.search-bar {
-    width: 40%;
-    padding: 15px;
-    font-size: 18px;
-    border: 0;
-    border-bottom: 1px solid #000;
-    background-color: transparent;
-    color: #000;
-    outline: none;
-}
-
-.search-icon {
-    width: 24px;
-    height: 24px;
 }

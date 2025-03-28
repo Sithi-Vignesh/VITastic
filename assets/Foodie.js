@@ -229,3 +229,43 @@ document.addEventListener('scroll', function () {
     toggleButton.style.display = 'block';
   }, 300);
 });
+
+
+function viewPlace(placeName) {
+  window.location.href = `template.html?name=${encodeURIComponent(placeName)}`;
+}
+
+
+
+function filterContents() {
+  // Get selected tags from the dropdown
+  const selectedTags = Array.from(document.querySelectorAll('.dropdown-content .tags.toggled')).map(tag => tag.getAttribute('data-tag'));
+
+  // Get all the `.cont` elements
+  const contents = document.querySelectorAll('.cont');
+
+  if (selectedTags.length > 0) {
+      // Loop through each `.cont` and filter based on the `places` data
+      contents.forEach(content => {
+          const placeName = content.querySelector('.cont-name').textContent.trim();
+          const place = places.find(p => p.name === placeName);
+
+          if (place) {
+              // Check if all selected tags are present in the place's tags
+              const hasAllTags = selectedTags.every(tag => place.tags.includes(tag));
+              if (hasAllTags) {
+                  content.style.display = ''; // Show the content
+              } else {
+                  content.style.display = 'none'; // Hide the content
+              }
+          } else {
+              content.style.display = 'none'; // Hide if no matching place is found
+          }
+      });
+  } else {
+      // No tags selected, show all contents
+      contents.forEach(content => {
+          content.style.display = ''; // Show all content
+      });
+  }
+}
