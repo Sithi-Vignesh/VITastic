@@ -232,7 +232,7 @@ document.addEventListener('scroll', function () {
 
 
 function viewPlace(placeName) {
-  window.location.href = `template.html?name=${encodeURIComponent(placeName)}`;
+  window.location.href = `Template.html?name=${encodeURIComponent(placeName)}`;
 }
 
 
