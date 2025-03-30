@@ -4,6 +4,7 @@ body {
     background: radial-gradient(circle, #ccebc5, #ffd8a8, #e0e0e0);
     height: 100vh;
     overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav{
@@ -933,3 +934,74 @@ footer {
     opacity: 1; 
     transform: translateX(0); 
 }
+
+
+.search-results {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 15px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+    text-align: left;
+}
+
+/* Show search results */
+.search-results.show {
+    display: block;
+}
+
+/* Individual Search Result Item */
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+/* Last item has no border */
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect */
+.search-result-item:hover {
+    background: #fff5e1;
+}
+
+/* Result Image */
+.result-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Result Info */
+.result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-info h4 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.result-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+.content h1, h2, h3, h4, h5, h6{
+    color: #e68a00;
+  }
