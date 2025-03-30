@@ -51,15 +51,14 @@ prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
 
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 5000);
+    autoSlideInterval = setInterval(nextSlide, 3000);
 }
 
 function stopAutoSlide() {
     clearInterval(autoSlideInterval);
 }
 
-slider.addEventListener('mouseenter', stopAutoSlide);
-slider.addEventListener('mouseleave', startAutoSlide);
+
 
 startAutoSlide();
 
@@ -90,4 +89,45 @@ document.addEventListener('scroll', function(event) {
   if (!searchBarContainer.contains(event.target) && !searchLink.contains(event.target)) {
       searchBarContainer.classList.remove('show');
   }
+});
+
+
+const observer1 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('fade-visible');
+      }
+  });
+});
+
+const sliderContainer = document.querySelector('.slider-container');
+if (sliderContainer) {
+  sliderContainer.classList.add('fade-hidden');
+  observer1.observe(sliderContainer);
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('fade-visible');
+      }
+  });
+});
+
+const outtop = document.querySelector('.outtop9');
+if (outtop) {
+  outtop.classList.add('fade-hidden');
+  observer.observe(outtop);
+}
+
+const observer2 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+      }
+  });
+});
+
+document.querySelectorAll('.top9txt, .fortext').forEach(element => {
+  observer2.observe(element);
 });

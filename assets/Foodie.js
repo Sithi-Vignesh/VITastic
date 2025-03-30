@@ -238,34 +238,63 @@ function viewPlace(placeName) {
 
 
 function filterContents() {
-  // Get selected tags from the dropdown
   const selectedTags = Array.from(document.querySelectorAll('.dropdown-content .tags.toggled')).map(tag => tag.getAttribute('data-tag'));
 
-  // Get all the `.cont` elements
   const contents = document.querySelectorAll('.cont');
 
   if (selectedTags.length > 0) {
-      // Loop through each `.cont` and filter based on the `places` data
       contents.forEach(content => {
           const placeName = content.querySelector('.cont-name').textContent.trim();
           const place = places.find(p => p.name === placeName);
 
           if (place) {
-              // Check if all selected tags are present in the place's tags
               const hasAllTags = selectedTags.every(tag => place.tags.includes(tag));
               if (hasAllTags) {
-                  content.style.display = ''; // Show the content
+                  content.style.display = '';
               } else {
-                  content.style.display = 'none'; // Hide the content
+                  content.style.display = 'none';
               }
           } else {
-              content.style.display = 'none'; // Hide if no matching place is found
+              content.style.display = 'none';
           }
       });
   } else {
-      // No tags selected, show all contents
       contents.forEach(content => {
-          content.style.display = ''; // Show all content
+          content.style.display = '';
       });
   }
 }
+
+
+// Trigger the filter bar animation
+document.addEventListener('DOMContentLoaded', () => {
+  const filterbar = document.querySelector('.filterbar');
+  const dropdowns = document.querySelectorAll('.type-filters .dropdown');
+
+  // Make filterbar visible
+  setTimeout(() => {
+      filterbar.style.opacity = 1;
+      filterbar.style.transform = 'translateX(0)';
+  }, 200); // Delay for smoother effect
+
+  // Sequentially show dropdowns
+  dropdowns.forEach((dropdown, index) => {
+      setTimeout(() => {
+          dropdown.style.opacity = 1;
+          dropdown.style.transform = 'translateY(0)';
+      }, 1000 + index * 300); // Delay each dropdown by 300ms
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all content blocks
+  const contentBlocks = document.querySelectorAll('.cont');
+
+  // Trigger animations sequentially
+  contentBlocks.forEach((block, index) => {
+      setTimeout(() => {
+          block.classList.add('visible'); // Add the visible class to trigger the animation
+      }, index * 300); // Delay each block's animation by 300ms
+  });
+});

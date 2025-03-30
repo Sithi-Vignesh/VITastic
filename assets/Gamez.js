@@ -229,3 +229,72 @@ document.addEventListener('scroll', function () {
     toggleButton.style.display = 'block';
   }, 300);
 });
+
+
+function viewPlace(placeName) {
+  window.location.href = `Template.html?name=${encodeURIComponent(placeName)}`;
+}
+
+
+
+function filterContents() {
+  const selectedTags = Array.from(document.querySelectorAll('.dropdown-content .tags.toggled')).map(tag => tag.getAttribute('data-tag'));
+
+  const contents = document.querySelectorAll('.cont');
+
+  if (selectedTags.length > 0) {
+      contents.forEach(content => {
+          const placeName = content.querySelector('.cont-name').textContent.trim();
+          const place = places.find(p => p.name === placeName);
+
+          if (place) {
+              const hasAllTags = selectedTags.every(tag => place.tags.includes(tag));
+              if (hasAllTags) {
+                  content.style.display = '';
+              } else {
+                  content.style.display = 'none';
+              }
+          } else {
+              content.style.display = 'none';
+          }
+      });
+  } else {
+      contents.forEach(content => {
+          content.style.display = '';
+      });
+  }
+}
+
+
+// Trigger the filter bar animation
+document.addEventListener('DOMContentLoaded', () => {
+  const filterbar = document.querySelector('.filterbar');
+  const dropdowns = document.querySelectorAll('.type-filters .dropdown');
+
+  // Make filterbar visible
+  setTimeout(() => {
+      filterbar.style.opacity = 1;
+      filterbar.style.transform = 'translateX(0)';
+  }, 200); // Delay for smoother effect
+
+  // Sequentially show dropdowns
+  dropdowns.forEach((dropdown, index) => {
+      setTimeout(() => {
+          dropdown.style.opacity = 1;
+          dropdown.style.transform = 'translateY(0)';
+      }, 1000 + index * 300); // Delay each dropdown by 300ms
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all content blocks
+  const contentBlocks = document.querySelectorAll('.cont');
+
+  // Trigger animations sequentially
+  contentBlocks.forEach((block, index) => {
+      setTimeout(() => {
+          block.classList.add('visible'); // Add the visible class to trigger the animation
+      }, index * 300); // Delay each block's animation by 300ms
+  });
+});

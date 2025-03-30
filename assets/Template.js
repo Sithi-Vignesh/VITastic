@@ -133,3 +133,87 @@ document.getElementById("menu-button").addEventListener("click", () => {
 });
 
 document.getElementById("map").src = place.mapEmbed;
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const actionButtons = document.getElementById("action-buttons");
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              actionButtons.classList.add("show-buttons");
+              observer.unobserve(actionButtons);
+          }
+      });
+  }, { threshold: 0.5 });
+
+  observer.observe(actionButtons);
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("menu-button");
+
+  menuButton.classList.add("hidden");
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              menuButton.classList.remove("hidden");
+              menuButton.classList.add("show-menu-button");
+              observer.unobserve(menuButton); 
+          }
+      });
+  }, { threshold: 0.5 });
+
+  observer.observe(menuButton);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const coverImage = document.getElementById("cover-image");
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              coverImage.classList.add("show-cover-image");
+              observer.unobserve(coverImage); 
+          }
+      });
+  }, { threshold: 0.5 });
+
+  observer.observe(coverImage);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const profileSection = document.getElementById("profile-section");
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              profileSection.classList.add("show-profile");
+              observer.unobserve(profileSection); 
+          }
+      });
+  }, { threshold: 0.4 });
+
+  observer.observe(profileSection);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contentSection = document.querySelector(".content"); 
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              contentSection.classList.add("show-content"); 
+              observer.unobserve(contentSection);
+          }
+      });
+  }, { threshold: 0.4 });
+
+  observer.observe(contentSection);
+});
