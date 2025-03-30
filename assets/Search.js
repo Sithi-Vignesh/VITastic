@@ -56,7 +56,7 @@ function toggleSearch(event) {
             const resultItem = document.createElement('div');
             resultItem.classList.add('search-result-item');
             resultItem.onclick = function () {
-              window.location.href = `template.html?name=${encodeURIComponent(place.name)}`;
+              window.location.href = `Template.html?name=${encodeURIComponent(place.name)}`;
             };
           
 
