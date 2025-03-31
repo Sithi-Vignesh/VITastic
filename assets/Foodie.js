@@ -266,35 +266,30 @@ function filterContents() {
 }
 
 
-// Trigger the filter bar animation
 document.addEventListener('DOMContentLoaded', () => {
   const filterbar = document.querySelector('.filterbar');
   const dropdowns = document.querySelectorAll('.type-filters .dropdown');
 
-  // Make filterbar visible
   setTimeout(() => {
       filterbar.style.opacity = 1;
       filterbar.style.transform = 'translateX(0)';
-  }, 200); // Delay for smoother effect
+  }, 100); 
 
-  // Sequentially show dropdowns
   dropdowns.forEach((dropdown, index) => {
       setTimeout(() => {
           dropdown.style.opacity = 1;
           dropdown.style.transform = 'translateY(0)';
-      }, 1000 + index * 300); // Delay each dropdown by 300ms
+      }, 1000 + index * 100); 
   });
 });
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Select all content blocks
   const contentBlocks = document.querySelectorAll('.cont');
 
-  // Trigger animations sequentially
   contentBlocks.forEach((block, index) => {
       setTimeout(() => {
-          block.classList.add('visible'); // Add the visible class to trigger the animation
-      }, index * 300); // Delay each block's animation by 300ms
+          block.classList.add('visible');
+      }, index * 100); 
   });
 });

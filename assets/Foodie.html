@@ -70,10 +70,12 @@
 
     <div class="maingrid">
         <div class="filterbar">
-            <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
-              </svg> Filters</div>
-              <div class="selected-filters">
+            <div class="heading">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+                </svg> Filters
+            </div>
+            <div class="selected-filters">
                 <p>Selected Filters:</p>
                 <div class="filter-tags"></div>
                 <button class="clear-filters-btn">Clear Filters</button>
@@ -84,21 +86,20 @@
                     <div class="dropdown-content">
                         <div class="tags" data-tag="South Indian">South Indian</div>
                         <div class="tags" data-tag="North Indian">North Indian</div>
-                        <div class="tags" data-tag="Korean">Korean</div>
-                        <div class="tags" data-tag="Japanese">Japanese</div>
                         <div class="tags" data-tag="Chinese">Chinese</div>
-                        <div class="tags" data-tag="Multi-Cusine">Multi-Cusine</div>
+                        <div class="tags" data-tag="Multi-Cuisine">Multi-Cuisine</div>
                         <div class="tags" data-tag="Tandoori">Tandoori</div>
                         <div class="tags" data-tag="BBQ">BBQ</div>
-                        <div class="tags" data-tag="Seafood">Seafood</div>
                         <div class="tags" data-tag="Continental">Continental</div>
+                        <div class="tags" data-tag="Fast Food">Fast Food</div>
+                        <div class="tags" data-tag="Desserts">Desserts</div>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Diet</button>
                     <div class="dropdown-content">
-                        <div class="tags" data-tag="Veg">Veg</div>
-                        <div class="tags" data-tag="Non-veg">Non-veg</div>
+                        <div class="tags" data-tag="Pure Veg">Pure Veg</div>
+                        <div class="tags" data-tag="Non-Veg">Non-Veg</div>
                         <div class="tags" data-tag="Mixed">Mixed</div>
                     </div>
                 </div>
@@ -106,7 +107,7 @@
                     <button class="dropbtn">Group</button>
                     <div class="dropdown-content">
                         <div class="tags" data-tag="Family">Family</div>
-                        <div class="tags" data-tag="Small Groups">Small Groups(5-7)</div>
+                        <div class="tags" data-tag="Group">Small Groups (5-7)</div>
                         <div class="tags" data-tag="Party">Party</div>
                         <div class="tags" data-tag="Couples">Couples</div>
                         <div class="tags" data-tag="Solo">Solo</div>
@@ -115,30 +116,34 @@
                 <div class="dropdown">
                     <button class="dropbtn">Food Type</button>
                     <div class="dropdown-content">
-                        <div class="tags" data-tag="Fast Food">Fast Food</div>
+                        <div class="tags" data-tag="Biryani">Biryani</div>
                         <div class="tags" data-tag="Snacks">Snacks</div>
-                        <div class="tags" data-tag="Drinks">Drinks</div>
-                        <div class="tags" data-tag="Ice-Creams">Ice-Creams</div>
+                        <div class="tags" data-tag="Ice Creams">Ice Creams</div>
+                        <div class="tags" data-tag="Waffles">Waffles</div>
+                        <div class="tags" data-tag="Burgers">Burgers</div>
+                        <div class="tags" data-tag="Pizza">Pizza</div>
+                        <div class="tags" data-tag="Shakes">Shakes</div>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Extras</button>
                     <div class="dropdown-content">
-                        <div class="tags" data-tag="Games">+ Games</div>
-                        <div class="tags" data-tag="Ambience">Ambience</div>
+                        <div class="tags" data-tag="Takeaway Available">Takeaway Available</div>
                         <div class="tags" data-tag="Air Conditioned">Air Conditioned</div>
+                        <div class="tags" data-tag="Ambience">Ambience</div>
+                        <div class="tags" data-tag="Games">Games</div>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">Distance</button>
                     <div class="dropdown-content">
-                        <div class="tags" data-tag="Games">Inside VIT</div>
-                        <div class="tags" data-tag="Ambience">Around VIT</div>
-                        <div class="tags" data-tag="Air Conditioned">Inside Vellore</div>
+                        <div class="tags" data-tag="Inside VIT">Inside VIT</div>
+                        <div class="tags" data-tag="Inside Vellore">Around VIT</div>
                     </div>
                 </div>
             </div>  
         </div>
+        
 
 
         <div class="conts">
@@ -146,7 +151,7 @@
                 <img class="cont-img" src="../imgs/food/TheVelloreKitchen_21.jpeg">
                 <div class="cont-content">
                     <div class="cont-name">The Vellore Kitchen</div>
-                    <div class="cont-rating">Rating : 4/5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <div class="cont-rating">Rating : 4.0 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                     </svg></div>
                     <div class="cont-desc">
@@ -191,7 +196,9 @@
                 <img src="../imgs/food/amritha_fine_dinning.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Amritha Fine Dinning</div>
-                    <div class="cont-rating">Rating: 4.6 / 5</div>
+                    <div class="cont-rating">Rating: 4.6 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
                     <div class="cont-desc">
                         <div class="desc-crd">Veg</div>
                         <div class="desc-crd">Ambience</div>
@@ -204,7 +211,9 @@
                 <img src="../imgs/food/alakar_virunthu.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Alakar's Virundhu</div>
-                    <div class="cont-rating">Rating: 4.7 / 5</div>
+                    <div class="cont-rating">Rating: 4.7 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
                     <div class="cont-desc">
                         <div class="desc-crd">Family</div>
                         <div class="desc-crd">Mixed</div>
@@ -217,7 +226,9 @@
                 <img src="../imgs/food/andhra-special-jaisha-grand-10404490.webp" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Hotel Jaisha Grand</div>
-                    <div class="cont-rating">Rating: 3.2 / 5</div>
+                    <div class="cont-rating">Rating: 3.2 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
                     <div class="cont-desc">
                         <div class="desc-crd">Air Conditioned</div>
                         <div class="desc-crd">South Indian</div>
@@ -230,7 +241,9 @@
                 <img src="../imgs/food/darling_namma_veedu.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Darling Namma Veedu</div>
-                    <div class="cont-rating">Rating: 3.8 / 5</div>
+                    <div class="cont-rating">Rating: 3.8 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
                     <div class="cont-desc">
                         <div class="desc-crd">BBQ</div>
                         <div class="desc-crd">Air Conditioned</div>
@@ -243,7 +256,9 @@
                 <img src="../imgs/food/abiruchi.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Abiruchi Multi-Cusine Restaurant</div>
-                    <div class="cont-rating">Rating: 3.9 / 5</div>
+                    <div class="cont-rating">Rating: 3.9 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
                     <div class="cont-desc">
                         <div class="desc-crd">Multi-Cusine</div>
                         <div class="desc-crd">Air Conditioned</div>
@@ -256,11 +271,298 @@
                 <img src="../imgs/food/hotel_srb_briyani_center.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Hotel SBR Briyani</div>
-                    <div class="cont-rating">Rating: 3.8 / 5</div>
+                    <div class="cont-rating">Rating: 3.8 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
                     <div class="cont-desc">
                         <div class="desc-crd">Non-veg</div>
                         <div class="desc-crd">Tandoori</div>
                         <div class="desc-crd">Multi-Cusine</div>
+                        <div class="desc-crd">South Indian</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Dominos')">
+                <img src="../imgs/food/dominos.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Domino's</div>
+                    <div class="cont-rating">Rating: 4.0 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Pizza</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Casual Dining</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Pizza Hut')">
+                <img src="../imgs/food/pizza_hut.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Pizza Hut</div>
+                    <div class="cont-rating">Rating: 4.9 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Pizza</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Casual Dining</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Burger King')">
+                <img src="../imgs/food/Burger_king.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Burger King</div>
+                    <div class="cont-rating">Rating: 4.6 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Burger</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Casual Dining</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('McDonalds')">
+                <img src="../imgs/food/mcdonalds.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">McDonald's</div>
+                    <div class="cont-rating">Rating: 4.1 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Burger</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">American</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Subway')">
+                <img src="../imgs/food/subway.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Subway</div>
+                    <div class="cont-rating">Rating: 4.2 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Sandwich</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Beverages</div>
+                        <div class="desc-crd">Salad</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Faasos')">
+                <img src="../imgs/food/faasos.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Faasos</div>
+                    <div class="cont-rating">Rating: 4.2 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Takeaway Available</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Rolls</div>
+                        <div class="desc-crd">Quick Bites</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Good Bowl')">
+                <img src="../imgs/food/good_bowl.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Good Bowl</div>
+                    <div class="cont-rating">Rating: 3.6 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Takeaway Available</div>
+                        <div class="desc-crd">Healthy Options</div>
+                        <div class="desc-crd">Biryani</div>
+                        <div class="desc-crd">Rice Bowls</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Cheesy Juicy Burger')">
+                <img src="../imgs/food/cheesy_juicy_burger.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Cheesy Juicy Burger</div>
+                    <div class="cont-rating">Rating: 4.1 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Takeaway Available</div>
+                        <div class="desc-crd">Burgers</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Casual Dining</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Apna Dhaba')">
+                <img src="../imgs/food/apna_dhaba.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Apna Dhaba</div>
+                    <div class="cont-rating">Rating: 3.8 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Chinese</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                        <div class="desc-crd">Spicy</div>
+                        <div class="desc-crd">Casual Dining</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Wow! China')">
+                <img src="../imgs/food/wow_china.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Wow! China</div>
+                    <div class="cont-rating">Rating: 4.3 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Punjabi</div>
+                        <div class="desc-crd">Tandoori</div>
+                        <div class="desc-crd">North Indian</div>
+                        <div class="desc-crd">Casual Dining</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Wow! Momo')">
+                <img src="../imgs/food/wow_momo.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Wow! Momo</div>
+                    <div class="cont-rating">Rating: 4.5 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Momos</div>
+                        <div class="desc-crd">Tibetan</div>
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Wow! Kulfi')">
+                <img src="../imgs/food/wow_kulfi.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Wow! Kulfi</div>
+                    <div class="cont-rating">Rating: 4.5 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Kulfi</div>
+                        <div class="desc-crd">Desserts</div>
+                        <div class="desc-crd">Ice Cream</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Frozen Bottle')">
+                <img src="../imgs/food/frozen_bottle.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Frozen Bottle</div>
+                    <div class="cont-rating">Rating: 3.3 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Milkshakes</div>
+                        <div class="desc-crd">Desserts</div>
+                        <div class="desc-crd">Ice Cream</div>
+                        <div class="desc-crd">Takeaway Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Hotel Aryaas')">
+                <img src="../imgs/food/aryaas.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Hotel Aryaas</div>
+                    <div class="cont-rating">Rating: 3.9 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Veg</div>
+                        <div class="desc-crd">Family</div>
+                        <div class="desc-crd">South Indian</div>
+                        <div class="desc-crd">North Indian</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('KFC')">
+                <img src="../imgs/food/kfc.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">KFC</div>
+                    <div class="cont-rating">Rating: 4.8 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Family</div>
+                        <div class="desc-crd">Burgers</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Mandeez Kitchen')">
+                <img src="../imgs/food/kfc.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Mandeez Kitchen</div>
+                    <div class="cont-rating">Rating: 4.2 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Fast Food</div>
+                        <div class="desc-crd">Family</div>
+                        <div class="desc-crd">Burgers</div>
+                        <div class="desc-crd">Air Conditioned</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Bakers Hub')">
+                <img src="../imgs/food/bakers_hub.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Bakers Hub</div>
+                    <div class="cont-rating">Rating: 4.1 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Snacks</div>
+                        <div class="desc-crd">Desserts</div>
+                        <div class="desc-crd">Cakes</div>
+                        <div class="desc-crd">Casual Dining</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('The Belgian Waffle Co.')">
+                <img src="../imgs/food/belgian_waffles.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">The Belgian Waffle Co.</div>
+                    <div class="cont-rating">Rating: 4.2 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Waffles</div>
+                        <div class="desc-crd">Desserts</div>
+                        <div class="desc-crd">Shakes</div>
+                        <div class="desc-crd">Casual Dining</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" onclick="viewPlace('Alakar Restaurant')">
+                <img src="../imgs/food/bakers_hub.jpg" class="cont-img">
+                <div class="cont-content">
+                    <div class="cont-name">Alakar Restaurant</div>
+                    <div class="cont-rating">Rating: 4.2 / 5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff9800" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></div>
+                    <div class="cont-desc">
+                        <div class="desc-crd">Pure Veg</div>
+                        <div class="desc-crd">Family</div>
+                        <div class="desc-crd">Traditional</div>
                         <div class="desc-crd">South Indian</div>
                     </div>
                 </div>
