@@ -33,7 +33,7 @@ body {
 /* Emoji Styling */
 .emoji {
     position: absolute;
-    font-size: 20px;
+    font-size: 40px;
     animation: fall 3s forwards; /* Fall animation */
     transition: transform 0.1s ease;
 }
@@ -189,4 +189,9 @@ body {
 .strtlogo.visible {
     opacity: 1; 
     transform: translateY(0); 
+}
+.fallen {
+    position: absolute;
+    animation: none; /* Stop further animation once fallen */
+    transform: translateX(-50%); /* Center horizontally */
 }

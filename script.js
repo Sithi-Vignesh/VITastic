@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Emojis related to food and fun
-    const emojis = ['🍕', '🍔', '🍣', '🍦', '🍿', '🎉', '🎈', '🎤', '🎮', '🍩', '🍪', '🍉'];
+    const emojis = ['🍕', '🍔', '🍣', '🍦', '🍿', '🎉', '🎈', '🎤', '🎮', '🍩', '🍪', '🍉','🍟','🌭','🥓','🥚','🧇','🥞','🧈','🍞','🥐','🥨','🥯','🥖','🫓','🧀','🥪','🌮','🌯','🍖','🍗','🥟','🥡','🍛','🍨','🍧','🍦','🥧','🧁','🍰','🍾','🍷','🍸','🍹','🍺','🧋','🥤','🎨'];
 
     // Generate falling emojis
     function generateFallingEmoji() {
@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Add the emoji to the body
         document.body.appendChild(emoji);
+
+        // Add 'fallen' class once the emoji reaches the bottom
+        setTimeout(() => emoji.classList.add('fallen'), 3000); // Adjust the timeout based on animation duration
+
+        // Remove emoji after it falls (prevent memory leaks)
+        setTimeout(() => emoji.remove(), 7000); 
 
         // Animate the falling emoji
         emoji.style.animation = 'fall 3s forwards'; // Fall animation for 3 seconds
