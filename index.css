@@ -4,7 +4,7 @@ body {
     padding: 0;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #ffdde1);
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #ffdde1);
     background-size: 300% 300%;
     animation: gradientShift 8s infinite ease-in-out;
     display: flex;
@@ -20,22 +20,21 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Falling Emojis Effect */
 @keyframes fall {
     0% {
-        transform: translate(-50%, -50%) translateY(-100px); /* Start above the screen */
+        transform: translate(-50%, -50%) translateY(-100px); 
     }
     100% {
-        transform: translate(-50%, -50%) translateY(calc(100vh + 50px)); /* Fall below the viewport */
+        transform: translate(-50%, -50%) translateY(calc(100vh + 50px)); 
     }
 }
 
-/* Emoji Styling */
 .emoji {
     position: absolute;
-    font-size: 40px;
-    animation: fall 3s forwards; /* Fall animation */
+    font-size: 30px;
+    animation: fall 3s forwards;
     transition: transform 0.1s ease;
+    z-index: -1;
 }
 
 
@@ -192,6 +191,6 @@ body {
 }
 .fallen {
     position: absolute;
-    animation: none; /* Stop further animation once fallen */
-    transform: translateX(-50%); /* Center horizontally */
+    animation: none;
+    transform: translateX(-50%); 
 }

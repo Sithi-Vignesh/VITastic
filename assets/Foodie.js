@@ -89,6 +89,7 @@ document.querySelectorAll('.dropdown-content .tags').forEach(tag => {
   });
 });
 
+
 function updateSelectedFilters() {
   const filterTagsContainer = document.querySelector('.filter-tags');
   filterTagsContainer.innerHTML = '';

@@ -39,12 +39,12 @@ function toggleSearch(event) {
 
     function filterPlaces(query) {
         return places.filter(place =>
-            place.name.toLowerCase().includes(query.toLowerCase()) // Search based only on name
+            place.name.toLowerCase().includes(query.toLowerCase())
         );
     }
 
     function displayResults(results) {
-        searchResultsContainer.innerHTML = ''; // Clear previous results
+        searchResultsContainer.innerHTML = '';
 
         if (results.length === 0) {
             searchResultsContainer.innerHTML = '<p class="no-results">No results found.</p>';

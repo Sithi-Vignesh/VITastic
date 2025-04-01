@@ -449,5 +449,144 @@ const places = [
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1711225609465!2d79.1368219!3d12.9608995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad4766119a7833%3A0x79a17ad103b92fe4!2sAlakar%20Restaurant!5e0!3m2!1sen!2sin!4v1743430115829!5m2!1sen!2sin"
 },
 
-// Add more restaurants here
+
+
+
+
+
+
+{
+    "name": "LXG Vellore",
+    "coverImg": "../imgs/entertainment/lxg_vellore.jpg",
+    "rating": "Rating: 4.8 / 5",
+    "description": "LXG Vellore is a vibrant gaming lounge that offers an exciting combination of gaming and dining. Known for its wide selection of video games, delicious snacks, and a lively atmosphere, LXG Vellore is the perfect spot for friends and families to unwind and have fun. It provides a great escape for gamers and non-gamers alike, offering everything from snacks to full meals in a cozy, high-energy environment.",
+    "tags": ["Inside Vellore", "Gaming Lounge", "Snacks", "Casual Dining", "Entertainment", "Casual Hangout", "Air Conditioned"],
+    "openingHours": "24 / 7",
+    "specialFeatures": ["Gaming Lounge", "Delicious Snacks", "Lively Atmosphere", "Air Conditioned", "Good for Groups"],
+    "popularDishes": ["PlayStation", "Arcade Games", "Snacks", "Milkshakes", "Pizza"],
+    "address": "568/1A , CHENNAI SALAI, opp. to VIT 1st gate>3rd gate, Katpadi, Vellore, Tamil Nadu 632014",
+    "contactNumber": "+91 9629298737",
+    "email": "info@lxgindia.com",
+    "location": "https://maps.app.goo.gl/7CRRyH2sc7a7uAMu8",
+    "menuLink": "https://www.lxgindia.com/",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0680101672215!2d79.15467857535067!3d12.967499887347547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47ff564983fd%3A0xc804ff4c5a5210c5!2sLXG%20Vellore!5e0!3m2!1sen!2sin!4v1743526765952!5m2!1sen!2sin"
+},
+{
+    "name": "RNR E-Sports Gaming Loudge",
+    "coverImg": "../imgs/entertainment/rnr_esports_gaming_loudge.jpg",
+    "rating": "Rating: 4.7 / 5",
+    "description": "RNR Esport Gaming Lodge Vellore is a high-end gaming hub that offers an immersive experience for gamers. Equipped with top-tier gaming PCs, PlayStation consoles, and a fast internet connection, it provides the perfect environment for casual and competitive gaming. With a comfortable setup, snacks, and an air-conditioned space, RNR Esport Gaming Lodge is a go-to destination for esports lovers and gaming enthusiasts.",
+    "tags": ["Inside Vellore", "Esports Arena", "Gaming Lounge", "PC Gaming", "PlayStation", "Snacks", "Air Conditioned", "Competitive Gaming", "Casual Hangout"],
+    "openingHours": "24 / 7",
+    "specialFeatures": ["High-End Gaming PCs", "Esports Tournaments", "VR Gaming", "Air Conditioned", "Fast Internet", "Comfortable Seating"],
+    "popularDishes": ["Gaming PCs", "PlayStation 5", "VR Experience", "Milkshakes", "Energy Drinks", "Burgers"],
+    "address": "VIT All - Mart, RNR E-Sports, Road, 3rd Main Landmark:, behind Student Limra Restaurant, Vellore, Tamil Nadu 632014",
+    "contactNumber": "09940761715",
+    "email": "-",
+    "location": "https://maps.app.goo.gl/PNGWYW3SqVNx8vFS7",
+    "menuLink": "-",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0405705043922!2d79.15129807535075!3d12.969255787345865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad477340b4c191%3A0x2ef8ac7a2c27f566!2sRNR%20E-Sports%20Gaming%20Lounge%20and%20Cafe!5e0!3m2!1sen!2sin!4v1743527489968!5m2!1sen!2sin"
+},
+{
+    "name": "Go Kart Thrill Sprint",
+    "coverImg": "../imgs/entertainment/go_kart_thrill_sprint.jpg",
+    "rating": "Rating: 4.5 / 5",
+    "description": "Go Kart Thrill Sprint Vellore is the ultimate destination for speed lovers and adrenaline junkies. Offering a well-maintained track, high-performance karts, and a thrilling racing experience, it's the perfect place for individuals, friends, and families to enjoy some competitive fun. Whether you're a first-time racer or an experienced driver, Go Kart Thrill Sprint ensures an exciting ride with top-notch safety measures.",
+    "tags": ["Inside Vellore", "Go Karting", "Outdoor Sports", "Thrilling Experience", "Competitive Racing", "Casual Hangout", "Safety Gear Provided"],
+    "openingHours": "10:30 AM - 6:30 PM",
+    "specialFeatures": ["High-Speed Go Karts", "Professional Racing Track", "Safety Equipment Provided", "Group Racing", "Perfect for Parties & Events"],
+    "popularDishes": ["Standard Karts", "Pro Racing Karts", "Time Trial Challenges", "Group Races"],
+    "address": "Next Shrishti School, VIT College Road, Brahmapuram, Vellore, Tamil Nadu 632006",
+    "contactNumber": "+91 9876543210",
+    "email": "-",
+    "location": "https://maps.app.goo.gl/foXXbBprQPfxkPbs6",
+    "menuLink": "-",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0547025665037!2d79.16539317535077!3d12.968351487346723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad472ee3586b6d%3A0x1b874cec1306a8ff!2sGO%20KART%20Thrill%20Sprint!5e0!3m2!1sen!2sin!4v1743528178604!5m2!1sen!2sin"
+},
+
+
+
+//check data.
+
+{
+    "name": "Velocity Mall",
+    "coverImg": "../imgs/entertainment/velocity_mall.jpg",
+    "rating": "Rating: 4.5 / 5",
+    "description": "Velocity Mall Vellore is a one-stop destination for shopping, entertainment, and dining. Featuring a wide range of retail stores, a multiplex cinema, an exciting gaming zone, and a diverse food court, the mall is perfect for a fun outing with friends and family. Whether you’re looking to shop, catch the latest movies, or enjoy thrilling arcade games, Velocity Mall offers a lively and engaging atmosphere.",
+    "tags": ["Inside Vellore", "Shopping Mall", "Movie Theater", "Food Court", "Arcade Games", "Casual Hangout", "Family-Friendly", "Entertainment Hub"],
+    "openingHours": "10:00 AM - 10:00 PM",
+    "specialFeatures": ["Multiplex Cinema", "Retail Stores", "Gaming Zone", "Kids Play Area", "Food Court", "Air Conditioned"],
+    "popularDishes": ["Popcorn & Snacks", "Fast Food", "Ice Cream", "Coffee & Beverages", "Fine Dining Options"],
+    "address": "Arcot Road, Opposite Green Circle, Vellore, Tamil Nadu 632004",
+    "contactNumber": "+91 9123456789",
+    "email": "info@velocitymall.com",
+    "location": "https://maps.app.goo.gl/VelocityMallVellore",
+    "menuLink": "https://www.velocitymall.com/",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.987654321098!2d79.145678987654!3d12.972345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47abcdef4321%3A0x123456789abcdef!2sVelocity%20Mall%20Vellore!5e0!3m2!1sen!2sin!4v1743526765952!5m2!1sen!2sin"
+},
+{
+    "name": "On Board",
+    "coverImg": "../imgs/entertainment/on_board.jpg",
+    "rating": "Rating: 4.7 / 5",
+    "description": "onBoard Vellore is a unique board game café that brings people together over exciting tabletop games and delicious snacks. With a vast collection of board games, from strategy-based classics to fun party games, it’s the perfect place for friends and families to bond over a friendly challenge. Paired with a cozy ambiance, great food, and refreshing beverages, onBoard Vellore offers an immersive and relaxing entertainment experience.",
+    "tags": ["Inside Vellore", "Board Game Café", "Casual Dining", "Fun Hangout", "Family-Friendly", "Indoor Entertainment", "Snacks & Beverages", "Air Conditioned"],
+    "openingHours": "11:00 AM - 11:00 PM",
+    "specialFeatures": ["Extensive Board Game Collection", "Cozy and Relaxing Ambiance", "Tasty Snacks & Beverages", "Perfect for Groups & Parties", "Air Conditioned"],
+    "popularDishes": ["Nachos & Dips", "Cheesy Fries", "Milkshakes", "Mojitos", "Brownies with Ice Cream"],
+    "address": "Katpadi - Chittoor Road, Near VIT, Vellore, Tamil Nadu 632014",
+    "contactNumber": "+91 9876543210",
+    "email": "contact@onboardvellore.com",
+    "location": "https://maps.app.goo.gl/onBoardVellore",
+    "menuLink": "https://www.onboardvellore.com/",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.56789012345!2d79.134567890123!3d12.975678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47abcdef0987%3A0x23456789abcdef!2sonBoard%20Vellore!5e0!3m2!1sen!2sin!4v1743526765952!5m2!1sen!2sin"
+},
+{
+    "name": "BoardVita",
+    "coverImg": "../imgs/entertainment/boardvita_cafe.jpg",
+    "rating": "Rating: 4.6 / 5",
+    "description": "BoardVita Vellore is a vibrant board game café designed for those who love engaging tabletop experiences paired with delicious food. With an extensive collection of classic and modern board games, it offers the perfect environment for friends, families, and casual gamers to enjoy quality time together. Whether you're strategizing over Catan, competing in UNO, or trying out a new game, BoardVita ensures a fun-filled and interactive experience in a cozy, welcoming space.",
+    "tags": ["Inside Vellore", "Board Game Café", "Casual Dining", "Group Entertainment", "Indoor Hangout", "Snacks & Beverages", "Air Conditioned", "Cozy Atmosphere"],
+    "openingHours": "10:30 AM - 11:00 PM",
+    "specialFeatures": ["Wide Variety of Board Games", "Relaxing & Cozy Ambiance", "Great for Group Outings", "Tasty Snacks & Drinks", "Air Conditioned"],
+    "popularDishes": ["Cheese Garlic Bread", "Loaded Nachos", "Classic Burgers", "Milkshakes", "Brownie with Ice Cream"],
+    "address": "Gandhi Nagar, Katpadi, Vellore, Tamil Nadu 632006",
+    "contactNumber": "+91 9876543211",
+    "email": "info@boardvita.com",
+    "location": "https://maps.app.goo.gl/BoardVitaVellore",
+    "menuLink": "https://www.boardvita.com/",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.678901234567!2d79.145678901234!3d12.986789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47abcdef5678%3A0x3456789abcdef!2sBoardVita%20Vellore!5e0!3m2!1sen!2sin!4v1743526765952!5m2!1sen!2sin"
+},
+{
+    "name": "Vellore Fort",
+    "coverImg": "../imgs/entertainment/vellore_fort.jpg",
+    "rating": "Rating: 4.5 / 5",
+    "description": "Vellore Fort is a historic landmark known for its impressive architecture and rich cultural heritage. Built during the 16th century by the Vijayanagara kings, this massive fort is surrounded by a deep moat and boasts stunning stone walls, ancient temples, a church, and a mosque. It is a must-visit for history enthusiasts, photographers, and tourists exploring Vellore. The fort offers a glimpse into the past with its well-preserved structures and beautiful surroundings.",
+    "tags": ["Inside Vellore", "Historical Landmark", "Sightseeing", "Photography Spot", "Heritage Site", "Outdoor Activity", "Tourist Attraction"],
+    "openingHours": "8:00 AM - 6:00 PM",
+    "specialFeatures": ["16th-Century Architecture", "Scenic Views", "Rich Historical Significance", "Well-Preserved Structures", "Surrounded by Moat"],
+    "popularDishes": [],
+    "address": "Balaji Nagar, Vellore, Tamil Nadu 632004",
+    "contactNumber": "+91 416 2223417",
+    "email": "-",
+    "location": "https://maps.app.goo.gl/VelloreFort",
+    "menuLink": "-",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.456789012345!2d79.132678901234!3d12.969890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47abcdef6789%3A0x456789abcdef!2sVellore%20Fort!5e0!3m2!1sen!2sin!4v1743526765952!5m2!1sen!2sin"
+},
+{
+    "name": "Slip N Kick",
+    "coverImg": "../imgs/entertainment/slipnkick.jpg",
+    "rating": "Rating: 4.6 / 5",
+    "description": "Slip N Kick Vellore is the ultimate destination for football enthusiasts and sports lovers. This well-maintained turf offers a high-quality playing surface, perfect for casual matches, tournaments, and team practice. With floodlights for night play and a lively atmosphere, Slip N Kick is a go-to spot for friends and teams looking to enjoy a thrilling game of football. Whether you're a beginner or a pro, this venue provides an exciting experience for all.",
+    "tags": ["Inside Vellore", "Football Turf", "Sports", "Outdoor Activity", "Casual Play", "Team Sports", "Floodlights", "Group Friendly"],
+    "openingHours": "6:00 AM - 11:00 PM",
+    "specialFeatures": ["High-Quality Turf", "Floodlit Night Games", "Perfect for Tournaments", "Good for Groups", "Spacious Playing Area"],
+    "popularDishes": [],
+    "address": "Near Green Circle, Katpadi Road, Vellore, Tamil Nadu 632004",
+    "contactNumber": "+91 9876543210",
+    "email": "-",
+    "location": "https://maps.app.goo.gl/SlipNKickVellore",
+    "menuLink": "-",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.678901234567!2d79.156789012345!3d12.987890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47abcdef4567%3A0x67890abcdef!2sSlip%20N%20Kick%20Vellore!5e0!3m2!1sen!2sin!4v1743526765952!5m2!1sen!2sin"
+}
+
 ];  

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VITastic(Gamez)</title>
     <link rel="stylesheet" href="Gamez.css">
-    <link rel="icon" href="../imgs/logo/logo 2.png">
+    <link rel="icon" href="../imgs/logo/logo1.png">
 </head>
 <body>
     <nav>
@@ -70,25 +70,58 @@
 
       <div class="maingrid">
         <div class="filterbar">
-            <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
-              </svg> Filters</div>
-              <div class="selected-filters">
+            <div class="heading">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+                </svg> 
+                Filters
+            </div>
+        
+            <div class="selected-filters">
                 <p>Selected Filters:</p>
                 <div class="filter-tags"></div>
                 <button class="clear-filters-btn">Clear Filters</button>
             </div>
+        
             <div class="type-filters">
                 <div class="dropdown">
-                    <button class="dropbtn">Type</button>
+                    <button class="dropbtn">Entertainment Type</button>
                     <div class="dropdown-content">
+                        <div class="tags" data-tag="Arcade">Arcade</div>
+                        <div class="tags" data-tag="VR Gaming">VR Gaming</div>
+                        <div class="tags" data-tag="PC & Console Gaming">PC & Console Gaming</div>
                         <div class="tags" data-tag="Board Games">Board Games</div>
-                        <div class="tags" data-tag="VR (Virtual Reality)">VR (Virtual Reality)</div>
-                        <div class="tags" data-tag="Video Games">Video Games</div>
-                        <div class="tags" data-tag="Indoor Sports">Indoor Sports</div>
-                        <div class="tags" data-tag="Outdoor Sports">Outdoor Sports</div>
+                        <div class="tags" data-tag="Bowling">Bowling</div>
+                        <div class="tags" data-tag="Escape Rooms">Escape Rooms</div>
+                        <div class="tags" data-tag="Laser Tag">Laser Tag</div>
+                        <div class="tags" data-tag="Mini Golf">Mini Golf</div>
+                        <div class="tags" data-tag="Karaoke">Karaoke</div>
+                        <div class="tags" data-tag="Movie Theater">Movie Theater</div>
+                        <div class="tags" data-tag="Live Music">Live Music</div>
+                        <div class="tags" data-tag="Esports Lounge">Esports Lounge</div>
+                        <div class="tags" data-tag="Shopping Mall">Shopping Mall</div>
+                        <div class="tags" data-tag="Water Park">Water Park</div>
+                        <div class="tags" data-tag="Fort & Heritage Site">Fort & Heritage Site</div>
                     </div>
                 </div>
+            
+                <div class="dropdown">
+                    <button class="dropbtn">Sports & Activities</button>
+                    <div class="dropdown-content">
+                        <div class="tags" data-tag="Indoor Sports">Indoor Sports</div>
+                        <div class="tags" data-tag="Outdoor Sports">Outdoor Sports</div>
+                        <div class="tags" data-tag="Go-Karting">Go-Karting</div>
+                        <div class="tags" data-tag="Trekking">Trekking</div>
+                        <div class="tags" data-tag="Paintball">Paintball</div>
+                        <div class="tags" data-tag="Trampoline Park">Trampoline Park</div>
+                        <div class="tags" data-tag="Swimming Pool">Swimming Pool</div>
+                        <div class="tags" data-tag="Rock Climbing">Rock Climbing</div>
+                        <div class="tags" data-tag="Football Turf">Football Turf</div>
+                        <div class="tags" data-tag="Water Activities">Water Activities</div>
+                        <div class="tags" data-tag="Historical Exploration">Historical Exploration</div>
+                    </div>
+                </div>
+            
                 <div class="dropdown">
                     <button class="dropbtn">Group Size</button>
                     <div class="dropdown-content">
@@ -96,8 +129,11 @@
                         <div class="tags" data-tag="Small Group">Small Group (2-4)</div>
                         <div class="tags" data-tag="Medium Group">Medium Group (5-7)</div>
                         <div class="tags" data-tag="Large Group">Large Group (8+)</div>
+                        <div class="tags" data-tag="Couples">Couples</div>
+                        <div class="tags" data-tag="Family Friendly">Family Friendly</div>
                     </div>
                 </div>
+            
                 <div class="dropdown">
                     <button class="dropbtn">Duration</button>
                     <div class="dropdown-content">
@@ -105,145 +141,141 @@
                         <div class="tags" data-tag="Medium">Medium (30-60 mins)</div>
                         <div class="tags" data-tag="Long">Long (60+ mins)</div>
                         <div class="tags" data-tag="Marathon">Marathon (120+ mins)</div>
+                        <div class="tags" data-tag="Full Day Activity">Full Day Activity</div>
                     </div>
                 </div>
+            
                 <div class="dropdown">
                     <button class="dropbtn">Extras</button>
                     <div class="dropdown-content">
-                        <div class="tags" data-tag="Games">+ Food</div>
-                        <div class="tags" data-tag="Ambience">Ambience</div>
+                        <div class="tags" data-tag="Food Available">+ Food</div>
                         <div class="tags" data-tag="Air Conditioned">Air Conditioned</div>
+                        <div class="tags" data-tag="Themed Ambience">Themed Ambience</div>
+                        <div class="tags" data-tag="Student Discounts">Student Discounts</div>
+                        <div class="tags" data-tag="Membership Available">Membership Available</div>
+                        <div class="tags" data-tag="Live Events">Live Events</div>
+                        <div class="tags" data-tag="Tournaments">Tournaments</div>
+                        <div class="tags" data-tag="Night Games">Night Games</div>
+                        <div class="tags" data-tag="Good for Groups">Good for Groups</div>
                     </div>
                 </div>
-
-
+            
                 <div class="dropdown">
                     <button class="dropbtn">Distance</button>
                     <div class="dropdown-content">
-                        <div class="tags" data-tag="Games">Inside VIT</div>
-                        <div class="tags" data-tag="Ambience">Around VIT</div>
-                        <div class="tags" data-tag="Air Conditioned">Inside Vellore</div>
+                        <div class="tags" data-tag="Inside VIT">Inside VIT</div>
+                        <div class="tags" data-tag="Near VIT">Near VIT</div>
+                        <div class="tags" data-tag="Inside Vellore">Inside Vellore</div>
+                        <div class="tags" data-tag="Tourist Attraction">Tourist Attraction</div>
                     </div>
                 </div>
-            </div>  
+            </div>             
         </div>
+        
 
 
         <div class="conts">
-            <div class="cont">
+            <div class="cont" onclick="viewPlace('LXG Vellore')">
                 <img class="cont-img" src="../imgs/entertainment/lxg_vellore.jpg">
                 <div class="cont-content">
                     <div class="cont-name">LXG Vellore</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-rating">Rating: 4.8 / 5</div>
                     <div class="cont-desc">
-                        <div class="desc-crd">Multi-Cusine</div>
-                        <div class="desc-crd">Mixed</div>
-                        <div class="desc-crd">Ambience</div>
+                        <div class="desc-crd">Gaming Lounge</div>
+                        <div class="desc-crd">Casual Hangout</div>
+                        <div class="desc-crd">Snacks</div>
                         <div class="desc-crd">Air Conditioned</div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
+            <div class="cont"onclick="viewPlace('RNR E-Sports Gaming Loudge')">
                 <img class="cont-img" src="../imgs/entertainment/rnr_esports_gaming_loudge.jpg">
                 <div class="cont-content">
                     <div class="cont-name">RNR E-Sports Gaming Loudge</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-rating">Rating: 4.7 / 5</div>
                     <div class="cont-desc">
-                        <div class="desc-crd">Mixed</div>
-                        <div class="desc-crd">Ambience</div>
-                        <div class="desc-crd">Multi-Cusine</div>
-                        <div class="desc-crd">Air Conditioned</div>
+                        <div class="desc-crd">Gaming Lounge</div>
+                        <div class="desc-crd">Casual Hangout</div>
+                        <div class="desc-crd">Thrilling Experience</div>
+                        <div class="desc-crd">Inside Vellore</div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
+            <div class="cont" onclick="viewPlace('Go Kart Thrill Sprint')">
                 <img src="../imgs/entertainment/go_kart_thrill_sprint.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Go Kart Thrill Sprint</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-rating">Rating: 4.5 / 5</div>
                     <div class="cont-desc">
-                        <div class="desc-crd">Ambience</div>
-                        <div class="desc-crd">Air Conditioned</div>
+                        <div class="desc-crd">Outdoor Sports</div>
+                        <div class="desc-crd">Go Karting</div>
                         <div class="desc-crd">Group</div>
                         <div class="desc-crd">Couples</div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
+            <div class="cont" onclick="viewPlace('Velocity Mall')">
                 <img src="../imgs/entertainment/velocity_mall.jpg" class="cont-img">
                 <div class="cont-content">
-                    <div class="cont-name">Velocity mall</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-name">Velocity Mall</div>
+                    <div class="cont-rating">Rating: 4.5 / 5</div>
                     <div class="cont-desc">
-                        <div class="desc-crd">Veg</div>
+                        <div class="desc-crd">Shopping Mall</div>
                         <div class="desc-crd">Ambience</div>
-                        <div class="desc-crd">Multi-Cusine</div>
-                        <div class="desc-crd">Family</div>
+                        <div class="desc-crd">Movie Theater</div>
+                        <div class="desc-crd">Casual Hangout</div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
+            <div class="cont" onclick="viewPlace('On Board')">
                 <img src="../imgs/entertainment/on_board.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">On Board</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-rating">Rating: 4.7 / 5</div>
                     <div class="cont-desc">
-                        <div class="desc-crd">Family</div>
-                        <div class="desc-crd">Mixed</div>
-                        <div class="desc-crd">South Indian</div>
+                        <div class="desc-crd">Board Game Café</div>
+                        <div class="desc-crd">Fun Hangout</div>
+                        <div class="desc-crd">Indoor Entertainment</div>
                         <div class="desc-crd">Air Conditioned</div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
+            <div class="cont" onclick="viewPlace('Boardvita')">
                 <img src="../imgs/entertainment/boardvita_cafe.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Boardvita</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-rating">Rating: 4.6 / 5</div>
                     <div class="cont-desc">
                         <div class="desc-crd">Air Conditioned</div>
-                        <div class="desc-crd">South Indian</div>
-                        <div class="desc-crd">North Indian</div>
-                        <div class="desc-crd">Tandoori</div>
+                        <div class="desc-crd">Board Game Café</div>
+                        <div class="desc-crd">Group Entertainment</div>
+                        <div class="desc-crd">Cozy Atmosphere</div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
+            <div class="cont" onclick="viewPlace('Vellore Fort')">
                 <img src="../imgs/entertainment/vellore_fort.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Vellore Fort</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-rating">Rating: 4.5 / 5</div>
                     <div class="cont-desc">
-                        <div class="desc-crd">BBQ</div>
-                        <div class="desc-crd">Air Conditioned</div>
-                        <div class="desc-crd">Multi-Cusine</div>
-                        <div class="desc-crd">South Indian</div>
+                        <div class="desc-crd">Inside Vellore</div>
+                        <div class="desc-crd">Tourist Attraction</div>
+                        <div class="desc-crd">Historical Landmark</div>
+                        <div class="desc-crd">Photography Spot</div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
-                <img src="../imgs/entertainment/hive_food_spot.jpg" class="cont-img">
-                <div class="cont-content">
-                    <div class="cont-name">Hive Food Spot</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
-                    <div class="cont-desc">
-                        <div class="desc-crd">Multi-Cusine</div>
-                        <div class="desc-crd">Air Conditioned</div>
-                        <div class="desc-crd">Non-veg</div>
-                        <div class="desc-crd">South Indian</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cont">
+            <div class="cont" onclick="viewPlace('Slip N Kick')">
                 <img src="../imgs/entertainment/slipnkick.jpg" class="cont-img">
                 <div class="cont-content">
                     <div class="cont-name">Slip N Kick</div>
-                    <div class="cont-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="cont-rating">Rating: 4.6 / 5</div>
                     <div class="cont-desc">
-                        <div class="desc-crd">Non-veg</div>
-                        <div class="desc-crd">Tandoori</div>
-                        <div class="desc-crd">Multi-Cusine</div>
-                        <div class="desc-crd">South Indian</div>
+                        <div class="desc-crd">Football Turf</div>
+                        <div class="desc-crd">Outdoor Activity</div>
+                        <div class="desc-crd">Group Friendly</div>
+                        <div class="desc-crd">Sports</div>
                     </div>
                 </div>
             </div>

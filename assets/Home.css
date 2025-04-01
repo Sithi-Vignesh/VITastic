@@ -302,6 +302,9 @@ footer {
     margin: 0;
     padding-bottom: 10px;
 }
+.cd-content > a:hover{
+    color: #38b6ff;
+}
 .content {
     font-size: 16px;
     margin: 0;
@@ -1145,3 +1148,11 @@ footer {
 .content h1, h2, h3, h4, h5, h6{
     color: #e68a00;
   }
+
+
+
+
+.navlogo:hover {
+    transform: rotate(3deg) scale(1.05);
+    transition: 0.5s ease;
+}

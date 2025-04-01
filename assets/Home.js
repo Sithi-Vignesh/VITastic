@@ -64,7 +64,6 @@ startAutoSlide();
 
 
 
-
 function toggleSearch(event) {
   event.preventDefault();
   const searchBarContainer = document.getElementById('searchBarContainer');

@@ -935,3 +935,8 @@ footer {
     color: #555;
     margin: 0;
 }
+
+.navlogo:hover {
+    transform: rotate(3deg) scale(1.05);
+    transition: 0.5s ease;
+}

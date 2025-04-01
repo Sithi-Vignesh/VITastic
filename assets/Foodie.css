@@ -1005,3 +1005,8 @@ footer {
 .content h1, h2, h3, h4, h5, h6{
     color: #e68a00;
   }
+
+  .navlogo:hover {
+    transform: rotate(3deg) scale(1.05);
+    transition: 0.5s ease;
+}
